@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="dccif 的个人博客">
 <meta property="og:description" content="短路求值 Short-circuit evaluation  最早是在php中接触到的这种求值，后来在学习Lisp中又一次接触到了，于是想写一篇文章记录一下，并分享一下，这个被我忽略的可能可以说是细节的点吧">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-10T08:18:30.690Z">
+<meta property="og:updated_time" content="2017-10-10T08:54:57.473Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="短路求值(Short-circuit evaluation)">
 <meta name="twitter:description" content="短路求值 Short-circuit evaluation  最早是在php中接触到的这种求值，后来在学习Lisp中又一次接触到了，于是想写一篇文章记录一下，并分享一下，这个被我忽略的可能可以说是细节的点吧">
@@ -357,7 +357,53 @@
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> (expressionA &amp;&amp; myfunc(b)) &#123;</div><div class="line">    do_something();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>当<strong>expressionA</strong>为<strong>True</strong>时无论<strong>do_something()</strong>是否执行，<strong>myfunc(b)</strong>都会执行，例如分配系统资源的操作。</p>
 <p>相反，<strong>expressionA</strong>为<strong>False</strong>时<strong>myfunc(b)</strong>永远不会执行</p>
-<h2 id="支持的语言"><a href="#支持的语言" class="headerlink" title="支持的语言"></a>支持的语言</h2><p><strong>并不是所有语言和所有操作符支持的</strong><br>Java支持<strong>非短路求值</strong>也支持<strong>短路求值</strong><br>| 常见的语言 | 支持的操作符 |<br>|:——-|:———|<br>|C, Obejective-C, C++, C#|&amp;&amp;, | |, ?|<br>|Java, MATLAB, R, Swift|&amp;&amp;, | ||<br>|JavaScript, GO, Haskel|&amp;&amp;, | ||<br>|Lisp, Lua, Scheme|and, or|<br>|PHP|&amp;&amp;, and, | |, or|<br>|Python|and, or|<br>|Visual Basic|不支持|</p>
+<h2 id="支持的语言"><a href="#支持的语言" class="headerlink" title="支持的语言"></a>支持的语言</h2><p><strong>并不是所有语言和所有操作符支持的</strong><br>Java支持<strong>非短路求值</strong>也支持<strong>短路求值</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">常见的语言</th>
+<th style="text-align:left">支持的操作符</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">C, Obejective-C, C++, C#</td>
+<td style="text-align:left">&amp;&amp;, /</td>
+<td></td>
+<td>, ?</td>
+</tr>
+<tr>
+<td style="text-align:left">Java, MATLAB, R, Swift</td>
+<td style="text-align:left">&amp;&amp;, \</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">JavaScript, GO, Haskel</td>
+<td style="text-align:left">&amp;&amp;, \</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">Lisp, Lua, Scheme</td>
+<td style="text-align:left">and, or</td>
+</tr>
+<tr>
+<td style="text-align:left">PHP</td>
+<td style="text-align:left">&amp;&amp;, and,</td>
+<td></td>
+<td>, or</td>
+</tr>
+<tr>
+<td style="text-align:left">Python</td>
+<td style="text-align:left">and, or</td>
+</tr>
+<tr>
+<td style="text-align:left">Visual Basic</td>
+<td style="text-align:left">不支持</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
