@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="短路求值 Short-circuit evaluation  最早是在php中接触到的这种求值，后来在学习Lisp中又一次接触到了，于是想写一篇文章记录一下，并分享一下，这个被我忽略的可能可以说是细节的点吧">
+<meta name="description" content="短路求值  Short-circuit evaluation  最早是在php中接触到的这种求值，后来在学习Lisp中又一次接触到了，于是想写一篇文章记录一下，并分享一下，这个被我忽略的可能可以说是细节的点吧">
 <meta name="keywords" content="小细节">
 <meta property="og:type" content="article">
 <meta property="og:title" content="短路求值(Short-circuit evaluation)">
 <meta property="og:url" content="http://www.dccif.com/programming/短路求值-Short-circuit-evaluation/index.html">
 <meta property="og:site_name" content="dccif 的个人博客">
-<meta property="og:description" content="短路求值 Short-circuit evaluation  最早是在php中接触到的这种求值，后来在学习Lisp中又一次接触到了，于是想写一篇文章记录一下，并分享一下，这个被我忽略的可能可以说是细节的点吧">
+<meta property="og:description" content="短路求值  Short-circuit evaluation  最早是在php中接触到的这种求值，后来在学习Lisp中又一次接触到了，于是想写一篇文章记录一下，并分享一下，这个被我忽略的可能可以说是细节的点吧">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2017-10-10T13:33:43.288Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="短路求值(Short-circuit evaluation)">
-<meta name="twitter:description" content="短路求值 Short-circuit evaluation  最早是在php中接触到的这种求值，后来在学习Lisp中又一次接触到了，于是想写一篇文章记录一下，并分享一下，这个被我忽略的可能可以说是细节的点吧">
+<meta name="twitter:description" content="短路求值  Short-circuit evaluation  最早是在php中接触到的这种求值，后来在学习Lisp中又一次接触到了，于是想写一篇文章记录一下，并分享一下，这个被我忽略的可能可以说是细节的点吧">
 
 
 
@@ -352,33 +352,44 @@
       
 
       
-        <h1 id="短路求值"><a href="#短路求值" class="headerlink" title="短路求值"></a>短路求值</h1><blockquote>
+        <h1>短路求值</h1>
+<blockquote>
 <p>Short-circuit evaluation</p>
 </blockquote>
 <p>最早是在<strong>php</strong>中接触到的这种求值，后来在学习<strong>Lisp</strong>中又一次接触到了，于是想写一篇文章记录一下，并分享一下，这个被我忽略的可能可以说是细节的点吧</p>
 <a id="more"></a>
-<h2 id="什么是短路求值（Short-circuit-evaluation）"><a href="#什么是短路求值（Short-circuit-evaluation）" class="headerlink" title="什么是短路求值（Short-circuit evaluation）"></a>什么是<strong>短路求值（Short-circuit evaluation）</strong></h2><p>以下摘自<a href="https://www.wikiwand.com/en/Short-circuit_evaluation" target="_blank" rel="external">Short-circuit evaluation</a></p>
+<h2>什么是<strong>短路求值（Short-circuit evaluation）</strong></h2>
+<p>以下摘自<a href="https://www.wikiwand.com/en/Short-circuit_evaluation" target="_blank" rel="external">Short-circuit evaluation</a></p>
 <blockquote>
-<p><strong>Short-circuit evaluation</strong>, minimal evaluation, or McCarthy evaluation (after John McCarthy) is the semantics of some Boolean operators in some programming languages in which the second argument is executed or evaluated only if the first argument does not suffice to determine the value of the expression: when the first argument of the AND function evaluates to false, the overall value must be false; and when the first argument of the OR function<br>evaluates to true, the overall value must be true.</p>
+<p><strong>Short-circuit evaluation</strong>, minimal evaluation, or McCarthy evaluation (after John McCarthy) is the semantics of some Boolean operators in some programming languages in which the second argument is executed or evaluated only if the first argument does not suffice to determine the value of the expression: when the first argument of the AND function evaluates to false, the overall value must be false; and when the first argument of the OR function
+evaluates to true, the overall value must be true.</p>
 </blockquote>
 <p>概况来说就是在求<strong>布尔表达式</strong>的时候程序并不会执行全部的<strong>Expression</strong></p>
 <p>比如<strong>AND</strong>或者<strong>OR</strong>操作时如果后面第一个Expression为True，那么之后的Expression就不会再求值了。</p>
-<h2 id="一些例子"><a href="#一些例子" class="headerlink" title="一些例子"></a>一些例子</h2><h3 id="普通的C程序"><a href="#普通的C程序" class="headerlink" title="普通的C程序"></a>普通的<strong>C</strong>程序</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> denom = <span class="number">0</span>;</div><div class="line"><span class="keyword">if</span> (denom != <span class="number">0</span> &amp;&amp; num / denom)</div><div class="line">&#123;</div><div class="line">    ... <span class="comment">// ensures that calculating num/denom never results in divide-by-zero error   </span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="使用了短路求值的C程序"><a href="#使用了短路求值的C程序" class="headerlink" title="使用了短路求值的C程序"></a>使用了短路求值的<strong>C</strong>程序</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> a = <span class="number">0</span>;</div><div class="line"><span class="keyword">if</span> (a != <span class="number">0</span> &amp;&amp; myfunc(b))</div><div class="line">&#123;</div><div class="line">    do_something();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>在这个例子中<strong>&amp;&amp;</strong>后的<strong>myfunc(b)</strong>将永远不会执行，因为<strong>a!=0</strong>永远是<strong>FALSE</strong>。<br>利用短路求值有2个有用的技巧</p>
+<h2>一些例子</h2>
+<h3>普通的<strong>C</strong>程序</h3>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> denom = <span class="number">0</span>;</div><div class="line"><span class="keyword">if</span> (denom != <span class="number">0</span> &amp;&amp; num / denom)</div><div class="line">&#123;</div><div class="line">    ... <span class="comment">// ensures that calculating num/denom never results in divide-by-zero error   </span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3>使用了短路求值的<strong>C</strong>程序</h3>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> a = <span class="number">0</span>;</div><div class="line"><span class="keyword">if</span> (a != <span class="number">0</span> &amp;&amp; myfunc(b))</div><div class="line">&#123;</div><div class="line">    do_something();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>在这个例子中**&amp;&amp;<strong>后的</strong>myfunc(b)<strong>将永远不会执行，因为</strong>a!=0<strong>永远是</strong>FALSE**。
+利用短路求值有2个有用的技巧</p>
 <ol>
 <li>如果条件判断的expression需要复杂的计算，并且第一个结果为<strong>False</strong>，则可以不计算之后的表达式</li>
 <li>可以构造一个expression来使第二个可能会发生运行时错误的expression成功运行</li>
 </ol>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">bool</span> <span class="title">is_first_char_valid_alpha_unsafe</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *p)</span></span></div><div class="line"><span class="function"></span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="built_in">isalpha</span>(p[<span class="number">0</span>]); <span class="comment">// SEGFAULT highly possible with p == NULL</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">bool</span> <span class="title">is_first_char_valid_alpha</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *p)</span></span></div><div class="line"><span class="function"></span>&#123;</div><div class="line">    <span class="keyword">return</span> p != <span class="literal">NULL</span> &amp;&amp; <span class="built_in">isalpha</span>(p[<span class="number">0</span>]); <span class="comment">// 1) no unneeded isalpha() execution with p == NULL, 2) no SEGFAULT risk</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>这个例子避免了空指针</p>
-<h3 id="最近学习的Lisp中的例子："><a href="#最近学习的Lisp中的例子：" class="headerlink" title="最近学习的Lisp中的例子："></a>最近学习的Lisp中的例子：</h3><figure class="highlight lisp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">(<span class="name">defparameter</span> *is-it-even* <span class="literal">nil</span>)</div><div class="line">(<span class="name">or</span> (<span class="name">oddp</span> <span class="number">5</span>) </div><div class="line">(<span class="name">setf</span> *is-it-even* <span class="literal">t</span>))</div></pre></td></tr></table></figure>
+<h3>最近学习的Lisp中的例子：</h3>
+<figure class="highlight lisp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">(<span class="name">defparameter</span> *is-it-even* <span class="literal">nil</span>)</div><div class="line">(<span class="name">or</span> (<span class="name">oddp</span> <span class="number">5</span>) </div><div class="line">(<span class="name">setf</span> *is-it-even* <span class="literal">t</span>))</div></pre></td></tr></table></figure>
 <p>利用短路求值，用<strong>OR</strong>实现了条件判断</p>
-<h2 id="可能的问题："><a href="#可能的问题：" class="headerlink" title="可能的问题："></a>可能的问题：</h2><p>尽管有上面说的优点，但是可能会带来没有意识到的问题，比如：</p>
+<h2>可能的问题：</h2>
+<p>尽管有上面说的优点，但是可能会带来没有意识到的问题，比如：</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> (expressionA &amp;&amp; myfunc(b)) &#123;</div><div class="line">    do_something();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>当<strong>expressionA</strong>为<strong>True</strong>时无论<strong>do_something()</strong>是否执行，<strong>myfunc(b)</strong>都会执行，例如分配系统资源的操作。</p>
-<p>相反，<strong>expressionA</strong>为<strong>False</strong>时<strong>myfunc(b)</strong>永远不会执行</p>
-<h2 id="支持的语言"><a href="#支持的语言" class="headerlink" title="支持的语言"></a>支持的语言</h2><p><strong>并不是所有语言和所有操作符支持的</strong><br>Java支持<strong>非短路求值</strong>也支持<strong>短路求值</strong></p>
+<p>当<strong>expressionA</strong>为<strong>True</strong>时无论**do_something()**是否执行，**myfunc(b)**都会执行，例如分配系统资源的操作。</p>
+<p>相反，<strong>expressionA</strong>为<strong>False</strong>时**myfunc(b)**永远不会执行</p>
+<h2>支持的语言</h2>
+<p><strong>并不是所有语言和所有操作符支持的</strong>
+Java支持<strong>非短路求值</strong>也支持<strong>短路求值</strong></p>
 <table>
 <thead>
 <tr>
@@ -609,7 +620,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#短路求值"><span class="nav-number">1.</span> <span class="nav-text">短路求值</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是短路求值（Short-circuit-evaluation）"><span class="nav-number">1.1.</span> <span class="nav-text">什么是短路求值（Short-circuit evaluation）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一些例子"><span class="nav-number">1.2.</span> <span class="nav-text">一些例子</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#普通的C程序"><span class="nav-number">1.2.1.</span> <span class="nav-text">普通的C程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用了短路求值的C程序"><span class="nav-number">1.2.2.</span> <span class="nav-text">使用了短路求值的C程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最近学习的Lisp中的例子："><span class="nav-number">1.2.3.</span> <span class="nav-text">最近学习的Lisp中的例子：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#可能的问题："><span class="nav-number">1.3.</span> <span class="nav-text">可能的问题：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#支持的语言"><span class="nav-number">1.4.</span> <span class="nav-text">支持的语言</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">短路求值</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">什么是短路求值（Short-circuit evaluation）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.2.</span> <span class="nav-text">一些例子</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.2.1.</span> <span class="nav-text">普通的C程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.2.2.</span> <span class="nav-text">使用了短路求值的C程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.2.3.</span> <span class="nav-text">最近学习的Lisp中的例子：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.3.</span> <span class="nav-text">可能的问题：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.4.</span> <span class="nav-text">支持的语言</span></a></li></ol></li></ol></div>
             
 
           </div>
