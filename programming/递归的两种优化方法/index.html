@@ -83,18 +83,18 @@
 
 
 
-<meta name="description" content="递归（Recursion）的两种优化方法 最近学习了一些递归的优化方法，于是想写一篇文章记录一下，方便以后查看，并想分享一下。虽然平日的上课中老师都是建议我们不要使用递归，但是在函数式编程（functional programming）中递归是很常用的，而且掌握递归的思想有时能让我们找到最优解。">
+<meta name="description" content="递归（Recursion）的两种优化方法最近学习了一些递归的优化方法，于是想写一篇文章记录一下，方便以后查看，并想分享一下。虽然平日的上课中老师都是建议我们不要使用递归，但是在函数式编程（functional programming）中递归是很常用的，而且掌握递归的思想有时能让我们找到最优解。">
 <meta name="keywords" content="优化">
 <meta property="og:type" content="article">
 <meta property="og:title" content="递归的两种优化方法">
 <meta property="og:url" content="http://www.dccif.com/programming/递归的两种优化方法/index.html">
 <meta property="og:site_name" content="dccif 的个人博客">
-<meta property="og:description" content="递归（Recursion）的两种优化方法 最近学习了一些递归的优化方法，于是想写一篇文章记录一下，方便以后查看，并想分享一下。虽然平日的上课中老师都是建议我们不要使用递归，但是在函数式编程（functional programming）中递归是很常用的，而且掌握递归的思想有时能让我们找到最优解。">
+<meta property="og:description" content="递归（Recursion）的两种优化方法最近学习了一些递归的优化方法，于是想写一篇文章记录一下，方便以后查看，并想分享一下。虽然平日的上课中老师都是建议我们不要使用递归，但是在函数式编程（functional programming）中递归是很常用的，而且掌握递归的思想有时能让我们找到最优解。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-10T14:27:43.367Z">
+<meta property="og:updated_time" content="2017-10-10T14:29:43.348Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="递归的两种优化方法">
-<meta name="twitter:description" content="递归（Recursion）的两种优化方法 最近学习了一些递归的优化方法，于是想写一篇文章记录一下，方便以后查看，并想分享一下。虽然平日的上课中老师都是建议我们不要使用递归，但是在函数式编程（functional programming）中递归是很常用的，而且掌握递归的思想有时能让我们找到最优解。">
+<meta name="twitter:description" content="递归（Recursion）的两种优化方法最近学习了一些递归的优化方法，于是想写一篇文章记录一下，方便以后查看，并想分享一下。虽然平日的上课中老师都是建议我们不要使用递归，但是在函数式编程（functional programming）中递归是很常用的，而且掌握递归的思想有时能让我们找到最优解。">
 
 
 
@@ -165,7 +165,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">个人网站</p>
+        <p class="site-subtitle">个人博客</p>
       
   </div>
 
@@ -356,8 +356,7 @@
       
 
       
-        <h1 id="递归（Recursion）的两种优化方法"><a href="#递归（Recursion）的两种优化方法" class="headerlink" title="递归（Recursion）的两种优化方法"></a>递归（Recursion）的两种优化方法</h1><hr>
-<p>最近学习了一些递归的优化方法，于是想写一篇文章记录一下，方便以后查看，并想分享一下。<br>虽然平日的上课中老师都是建议我们不要使用递归，但是在<strong>函数式编程（functional programming）</strong>中递归是很常用的，而且掌握递归的思想有时能让我们找到最优解。</p>
+        <h1 id="递归（Recursion）的两种优化方法"><a href="#递归（Recursion）的两种优化方法" class="headerlink" title="递归（Recursion）的两种优化方法"></a>递归（Recursion）的两种优化方法</h1><p>最近学习了一些递归的优化方法，于是想写一篇文章记录一下，方便以后查看，并想分享一下。<br>虽然平日的上课中老师都是建议我们不要使用递归，但是在<strong>函数式编程（functional programming）</strong>中递归是很常用的，而且掌握递归的思想有时能让我们找到最优解。</p>
 <a id="more"></a>
 <h2 id="1-最经典的斐波那契数列"><a href="#1-最经典的斐波那契数列" class="headerlink" title="1. 最经典的斐波那契数列"></a>1. 最经典的斐波那契数列</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">Fibonacci</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</div><div class="line">    <span class="keyword">if</span> (n == <span class="number">1</span> || n == <span class="number">2</span>) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span></div><div class="line">    &#123;</div><div class="line">        <span class="keyword">return</span> Fibonacci(n - <span class="number">2</span>) + Fibonacci(n - <span class="number">1</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>这个算法一般计算到40左右就不行了，因为运行栈已经被函数的递归调用占满了</p>
