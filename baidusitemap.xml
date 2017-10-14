@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http://www.dccif.com/gossipy/Prologue/</loc>
+    <lastmod>2017-10-11T02:18:10.000Z</lastmod>
+    <data>
+        <display>
+        <title>Prologue</title>
+        <pubTime>2017-10-10T15:28:19.000Z</pubTime>
+        
+        <tag>闲谈</tag>
+         
+         
+           
+             
+              <breadCrumb title="随想" url="http://www.dccif.com/categories/gossipy/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.dccif.com/programming/%E9%80%92%E5%BD%92%E7%9A%84%E4%B8%A4%E7%A7%8D%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2017-10-10T14:29:43.348Z</lastmod>
+    <data>
+        <display>
+        <title>递归的两种优化方法</title>
+        <pubTime>2017-10-10T14:24:04.000Z</pubTime>
+        
+        <tag>优化</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程" url="http://www.dccif.com/categories/programming/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.dccif.com/uncategorized/hello-world/</loc>
+    <lastmod>2017-10-10T13:53:01.700Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2017-10-10T05:01:16.593Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://www.dccif.com/programming/%E7%9F%AD%E8%B7%AF%E6%B1%82%E5%80%BC-Short-circuit-evaluation/</loc>
+    <lastmod>2017-10-10T13:33:43.288Z</lastmod>
+    <data>
+        <display>
+        <title>短路求值(Short-circuit evaluation)</title>
+        <pubTime>2017-10-10T08:05:27.000Z</pubTime>
+        
+        <tag>小细节</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程" url="http://www.dccif.com/categories/programming/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://www.dccif.com/uncategorized/my-test-page/</loc>
+    <lastmod>2017-10-10T08:24:07.822Z</lastmod>
+    <data>
+        <display>
+        <title>my test page</title>
+        <pubTime>2017-10-10T05:05:03.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+</urlset>
