@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="dccif 的个人博客">
 <meta property="og:description" content="一些闲话来作为我博客的序章吧 可以说是“机缘巧合”吧，我从原来的自建服务器迁移到了GitHub Pages上，具体的原因我绝的可以留到下一篇博文再说了😜 写作的缘由">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-10T16:55:13.690Z">
+<meta property="og:updated_time" content="2017-10-11T02:18:10.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Prologue">
 <meta name="twitter:description" content="一些闲话来作为我博客的序章吧 可以说是“机缘巧合”吧，我从原来的自建服务器迁移到了GitHub Pages上，具体的原因我绝的可以留到下一篇博文再说了😜 写作的缘由">
@@ -100,7 +100,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '5.1.3',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -132,6 +132,16 @@
 
 
 
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?<script> var _hmt = _hmt || []; (function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?562b1df895a229b1c30e71cb582fe42a"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })(); </script>";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -298,7 +308,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-10-11T10:18:10+08:00">
+                2017-10-11
+              </time>
             
           </span>
 
@@ -421,6 +443,10 @@
 
 
           
+  
+    <div class="comments" id="comments">
+      <div id="vcomments"></div>
+    </div>
   
 
 
@@ -552,6 +578,13 @@
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
@@ -599,11 +632,6 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
 
   </div>
 
@@ -627,6 +655,9 @@
 
 
 
+
+  
+  
 
 
 
@@ -653,6 +684,12 @@
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
 
 
   
@@ -713,6 +750,21 @@
 
 
 
+
+  
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine@1.1.4/dist/Valine.min.js"></script>
+  <script type="text/javascript">
+    new Valine({
+        av: AV,
+        el: '#vcomments' ,
+        verify: false,
+        notify: false,
+        app_id: 'OVIweHn1ppT6yIzsN6Ue3i9L-gzGzoHsz',
+        app_key: 'wbndkzRiJs1pw17xkOv8Qu2s',
+        placeholder: 'Comment input placeholder'
+    });
+  </script>
 
 
 
