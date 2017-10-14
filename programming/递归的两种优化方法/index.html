@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="递归（Recursion）的两种优化方法 最近学习了一些递归的优化方法，于是想写一篇文章记录一下，方便以后查看，并想分享一下。 虽然平日的上课中老师都是建议我们不要使用递归，但是在**函数式编程（functional programming）**中递归是很常用的，而且掌握递归的思想有时能让我们找到最优解。">
+<meta name="description" content="递归（Recursion）的两种优化方法最近学习了一些递归的优化方法，于是想写一篇文章记录一下，方便以后查看，并想分享一下。虽然平日的上课中老师都是建议我们不要使用递归，但是在函数式编程（functional programming）中递归是很常用的，而且掌握递归的思想有时能让我们找到最优解。">
 <meta name="keywords" content="优化">
 <meta property="og:type" content="article">
 <meta property="og:title" content="递归的两种优化方法">
 <meta property="og:url" content="http://www.dccif.com/programming/递归的两种优化方法/index.html">
 <meta property="og:site_name" content="dccif 的个人博客">
-<meta property="og:description" content="递归（Recursion）的两种优化方法 最近学习了一些递归的优化方法，于是想写一篇文章记录一下，方便以后查看，并想分享一下。 虽然平日的上课中老师都是建议我们不要使用递归，但是在**函数式编程（functional programming）**中递归是很常用的，而且掌握递归的思想有时能让我们找到最优解。">
+<meta property="og:description" content="递归（Recursion）的两种优化方法最近学习了一些递归的优化方法，于是想写一篇文章记录一下，方便以后查看，并想分享一下。虽然平日的上课中老师都是建议我们不要使用递归，但是在函数式编程（functional programming）中递归是很常用的，而且掌握递归的思想有时能让我们找到最优解。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2017-10-10T14:29:43.348Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="递归的两种优化方法">
-<meta name="twitter:description" content="递归（Recursion）的两种优化方法 最近学习了一些递归的优化方法，于是想写一篇文章记录一下，方便以后查看，并想分享一下。 虽然平日的上课中老师都是建议我们不要使用递归，但是在**函数式编程（functional programming）**中递归是很常用的，而且掌握递归的思想有时能让我们找到最优解。">
+<meta name="twitter:description" content="递归（Recursion）的两种优化方法最近学习了一些递归的优化方法，于是想写一篇文章记录一下，方便以后查看，并想分享一下。虽然平日的上课中老师都是建议我们不要使用递归，但是在函数式编程（functional programming）中递归是很常用的，而且掌握递归的思想有时能让我们找到最优解。">
 
 
 
@@ -374,26 +374,15 @@
       
 
       
-        <h1>递归（Recursion）的两种优化方法</h1>
-<p>最近学习了一些递归的优化方法，于是想写一篇文章记录一下，方便以后查看，并想分享一下。
-虽然平日的上课中老师都是建议我们不要使用递归，但是在**函数式编程（functional programming）**中递归是很常用的，而且掌握递归的思想有时能让我们找到最优解。</p>
+        <h1 id="递归（Recursion）的两种优化方法"><a href="#递归（Recursion）的两种优化方法" class="headerlink" title="递归（Recursion）的两种优化方法"></a>递归（Recursion）的两种优化方法</h1><p>最近学习了一些递归的优化方法，于是想写一篇文章记录一下，方便以后查看，并想分享一下。<br>虽然平日的上课中老师都是建议我们不要使用递归，但是在<strong>函数式编程（functional programming）</strong>中递归是很常用的，而且掌握递归的思想有时能让我们找到最优解。</p>
 <a id="more"></a>
-<h2>1. 最经典的斐波那契数列</h2>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">Fibonacci</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</div><div class="line">    <span class="keyword">if</span> (n == <span class="number">1</span> || n == <span class="number">2</span>) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span></div><div class="line">    &#123;</div><div class="line">        <span class="keyword">return</span> Fibonacci(n - <span class="number">2</span>) + Fibonacci(n - <span class="number">1</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="1-最经典的斐波那契数列"><a href="#1-最经典的斐波那契数列" class="headerlink" title="1. 最经典的斐波那契数列"></a>1. 最经典的斐波那契数列</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">Fibonacci</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</div><div class="line">    <span class="keyword">if</span> (n == <span class="number">1</span> || n == <span class="number">2</span>) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span></div><div class="line">    &#123;</div><div class="line">        <span class="keyword">return</span> Fibonacci(n - <span class="number">2</span>) + Fibonacci(n - <span class="number">1</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>这个算法一般计算到40左右就不行了，因为运行栈已经被函数的递归调用占满了</p>
-<h2>2. 尾递归（Tail Recursive）</h2>
-<p>传说中的<a href="https://www.wikiwand.com/zh/%E5%B0%BE%E8%B0%83%E7%94%A8" target="_blank" rel="external"><strong>尾递归</strong></a>。具体我不细说了，就是上一个版本的优化，每次调用函数时不生成新的运行栈，利用上一次的结果
-<strong>注意：<strong>不是所有语言都有</strong>尾递归</strong>优化的（Java就没有）
-也不是所有算法都能写成<strong>尾递归</strong>的形式的</p>
+<h2 id="2-尾递归（Tail-Recursive）"><a href="#2-尾递归（Tail-Recursive）" class="headerlink" title="2. 尾递归（Tail Recursive）"></a>2. 尾递归（Tail Recursive）</h2><p>传说中的<a href="https://www.wikiwand.com/zh/%E5%B0%BE%E8%B0%83%E7%94%A8" target="_blank" rel="external"><strong>尾递归</strong></a>。具体我不细说了，就是上一个版本的优化，每次调用函数时不生成新的运行栈，利用上一次的结果<br><strong>注意：</strong>不是所有语言都有<strong>尾递归</strong>优化的（Java就没有）<br>       也不是所有算法都能写成<strong>尾递归</strong>的形式的</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fiboTail</span><span class="params">(<span class="keyword">int</span> n, <span class="keyword">int</span> acc, <span class="keyword">int</span> cal)</span> </span></div><div class="line"><span class="function"><span class="comment">//acc充当收集器的左右，收集上一次运行栈的返回值，因为之后栈空间会被回收</span></span></div><div class="line"><span class="function"><span class="comment">//cal是每一次递归的计算</span></span></div><div class="line"><span class="function"></span>&#123;</div><div class="line">    <span class="keyword">if</span> (n == <span class="number">1</span>) <span class="keyword">return</span> acc;</div><div class="line">    <span class="keyword">if</span> (n == <span class="number">2</span>) <span class="keyword">return</span> cal;</div><div class="line">    <span class="keyword">return</span> fiboTail(n - <span class="number">1</span>, acc, acc+cal);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>可以看到尾递归的函数比原始的版本多了2个参数，一个起到**收集器（accumulator)**的作用，记录每上一次栈的返回值，因为原来栈的空间会被下一层递归覆盖。
-还有一个参数就是每次递归的操作了，因为是斐波那契，所以这里是相加。</p>
-<p>尾递归的调用方法也与原来的不一样，因为斐波那契的初始值 ( 1. 1 . 2 . 3 ......)
-所以以下的调用，acc 要用初始值 1，cal 也要用第二位的值这里也是1
-调用的方法就是  <strong>fiboTail(n, 1，1）</strong>
-尾递归的方法计算基本上是秒出的，可是比起下面一种方法还是要慢，就是在32位机器上要注意 <strong>int范围</strong> 第47位已经超过int的表示范围了</p>
-<h2>3. 利用缓存</h2>
-<p>典型的空间换时间</p>
+<p>可以看到尾递归的函数比原始的版本多了2个参数，一个起到<strong>收集器（accumulator)</strong>的作用，记录每上一次栈的返回值，因为原来栈的空间会被下一层递归覆盖。<br>还有一个参数就是每次递归的操作了，因为是斐波那契，所以这里是相加。</p>
+<p>尾递归的调用方法也与原来的不一样，因为斐波那契的初始值 ( 1. 1 . 2 . 3 ……)<br>所以以下的调用，acc 要用初始值 1，cal 也要用第二位的值这里也是1<br>调用的方法就是  <strong>fiboTail(n, 1，1）</strong><br>尾递归的方法计算基本上是秒出的，可是比起下面一种方法还是要慢，就是在32位机器上要注意 <strong>int范围</strong> 第47位已经超过int的表示范围了</p>
+<h2 id="3-利用缓存"><a href="#3-利用缓存" class="headerlink" title="3. 利用缓存"></a>3. 利用缓存</h2><p>典型的空间换时间</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">enum</span> &#123; gnFib = <span class="number">99</span> &#125;;</div><div class="line"><span class="keyword">int</span> gFib[gnFib];      <span class="comment">// 生成一个数组记录已经生成的斐波那契数</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fib</span><span class="params">(<span class="keyword">int</span> n)</span></span></div><div class="line"><span class="function"></span>&#123;</div><div class="line">    <span class="keyword">if</span> (n &lt; <span class="number">0</span> || n &gt;= gnFib) <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">    <span class="keyword">int</span> &amp;fn = gFib[n];   </div><div class="line">    <span class="keyword">if</span> (!fn) &#123;            <span class="comment">//如果当前数不在数组中才计算</span></div><div class="line">        <span class="keyword">if</span> (n == <span class="number">0</span> || n == <span class="number">1</span>) fn = <span class="number">1</span>;</div><div class="line">            <span class="keyword">else</span> fn = fib(n - <span class="number">1</span>) + fib(n - <span class="number">2</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> fn;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>核心思想就是利用之前信息，每次递归不用再重新计算了</p>
 
@@ -436,8 +425,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/gossipy/Prologue/" rel="prev" title="Prologue">
-                Prologue <i class="fa fa-chevron-right"></i>
+              <a href="/programming/IDEA下的Java-Webapp环境搭建/" rel="prev" title="IDEA下的Java Webapp环境搭建">
+                IDEA下的Java Webapp环境搭建 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -543,7 +532,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -592,7 +581,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">递归（Recursion）的两种优化方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">1. 最经典的斐波那契数列</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.2.</span> <span class="nav-text">2. 尾递归（Tail Recursive）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.3.</span> <span class="nav-text">3. 利用缓存</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#递归（Recursion）的两种优化方法"><span class="nav-number">1.</span> <span class="nav-text">递归（Recursion）的两种优化方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-最经典的斐波那契数列"><span class="nav-number">1.1.</span> <span class="nav-text">1. 最经典的斐波那契数列</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-尾递归（Tail-Recursive）"><span class="nav-number">1.2.</span> <span class="nav-text">2. 尾递归（Tail Recursive）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-利用缓存"><span class="nav-number">1.3.</span> <span class="nav-text">3. 利用缓存</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -679,9 +668,6 @@
 
 
 
-  
-  
-
 
 
 
@@ -707,12 +693,6 @@
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-  
-  <script type="text/javascript" src="/lib/three/three.min.js"></script>
-
-  
-  <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
 
 
   
@@ -800,6 +780,21 @@
   
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
 

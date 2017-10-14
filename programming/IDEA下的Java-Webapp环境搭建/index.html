@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="闲谈," />
+  <meta name="keywords" content="环境搭建," />
 
 
 
@@ -79,18 +79,33 @@
 
 
 
-<meta name="description" content="一些闲话来作为我博客的序章吧 可以说是“机缘巧合”吧，我从原来的自建服务器迁移到了GitHub Pages上，具体的原因我绝的可以留到下一篇博文再说了😜 写作的缘由">
-<meta name="keywords" content="闲谈">
+<meta name="description" content="IDEA 下Java Webapp的环境搭建本文在以下环境搭建：  IntelliJ IDEA 2017.2.5JDK 1.8.0_144JRE: 1.8.0_152-release-915-b12 amd64JVM: OpenJDK 64-Bit Server VM by JetBrains s.r.oApache Tomcat 9.0.1 ServerWindows 10 x64 15063.">
+<meta name="keywords" content="环境搭建">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Prologue">
-<meta property="og:url" content="http://www.dccif.com/gossipy/Prologue/index.html">
+<meta property="og:title" content="IDEA下的Java Webapp环境搭建">
+<meta property="og:url" content="http://www.dccif.com/programming/IDEA下的Java-Webapp环境搭建/index.html">
 <meta property="og:site_name" content="dccif 的个人博客">
-<meta property="og:description" content="一些闲话来作为我博客的序章吧 可以说是“机缘巧合”吧，我从原来的自建服务器迁移到了GitHub Pages上，具体的原因我绝的可以留到下一篇博文再说了😜 写作的缘由">
+<meta property="og:description" content="IDEA 下Java Webapp的环境搭建本文在以下环境搭建：  IntelliJ IDEA 2017.2.5JDK 1.8.0_144JRE: 1.8.0_152-release-915-b12 amd64JVM: OpenJDK 64-Bit Server VM by JetBrains s.r.oApache Tomcat 9.0.1 ServerWindows 10 x64 15063.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-11T02:18:10.000Z">
+<meta property="og:image" content="http://www.dccif.com/image/IDEA/newproject.jpg">
+<meta property="og:image" content="http://www.dccif.com/image/IDEA/select.jpg">
+<meta property="og:image" content="http://www.dccif.com/image/IDEA/struct.jpg">
+<meta property="og:image" content="http://www.dccif.com/image/IDEA/after.jpg">
+<meta property="og:image" content="http://www.dccif.com/image/IDEA/newservlet.jpg">
+<meta property="og:image" content="http://www.dccif.com/image/IDEA/newstruct.jpg">
+<meta property="og:image" content="http://www.dccif.com/image/IDEA/newout.jpg">
+<meta property="og:image" content="http://www.dccif.com/image/IDEA/newlib.jpg">
+<meta property="og:image" content="http://www.dccif.com/image/IDEA/outset.jpg">
+<meta property="og:image" content="http://www.dccif.com/image/IDEA/configserver.jpg">
+<meta property="og:image" content="http://www.dccif.com/image/IDEA/setserver1.jpg">
+<meta property="og:image" content="http://www.dccif.com/image/IDEA/setserver2.jpg">
+<meta property="og:image" content="http://www.dccif.com/image/IDEA/result1.jpg">
+<meta property="og:image" content="http://www.dccif.com/image/IDEA/result1.jpg">
+<meta property="og:updated_time" content="2017-10-14T09:12:48.182Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Prologue">
-<meta name="twitter:description" content="一些闲话来作为我博客的序章吧 可以说是“机缘巧合”吧，我从原来的自建服务器迁移到了GitHub Pages上，具体的原因我绝的可以留到下一篇博文再说了😜 写作的缘由">
+<meta name="twitter:title" content="IDEA下的Java Webapp环境搭建">
+<meta name="twitter:description" content="IDEA 下Java Webapp的环境搭建本文在以下环境搭建：  IntelliJ IDEA 2017.2.5JDK 1.8.0_144JRE: 1.8.0_152-release-915-b12 amd64JVM: OpenJDK 64-Bit Server VM by JetBrains s.r.oApache Tomcat 9.0.1 ServerWindows 10 x64 15063.">
+<meta name="twitter:image" content="http://www.dccif.com/image/IDEA/newproject.jpg">
 
 
 
@@ -120,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://www.dccif.com/gossipy/Prologue/"/>
+  <link rel="canonical" href="http://www.dccif.com/programming/IDEA下的Java-Webapp环境搭建/"/>
 
 
 
 
 
-  <title>Prologue | dccif 的个人博客</title>
+  <title>IDEA下的Java Webapp环境搭建 | dccif 的个人博客</title>
   
 
 
@@ -273,7 +288,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.dccif.com/gossipy/Prologue/">
+    <link itemprop="mainEntityOfPage" href="http://www.dccif.com/programming/IDEA下的Java-Webapp环境搭建/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="dccif">
@@ -290,7 +305,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Prologue</h1>
+          <h1 class="post-title" itemprop="name headline">IDEA下的Java Webapp环境搭建</h1>
         
 
         <div class="post-meta">
@@ -302,8 +317,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-10T23:28:19+08:00">
-                2017-10-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-14T15:14:55+08:00">
+                2017-10-14
               </time>
             
 
@@ -318,8 +333,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-10-11T10:18:10+08:00">
-                2017-10-11
+              <time title="更新于" itemprop="dateModified" datetime="2017-10-14T17:12:48+08:00">
+                2017-10-14
               </time>
             
           </span>
@@ -337,8 +352,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/gossipy/" itemprop="url" rel="index">
-                    <span itemprop="name">随想</span>
+                  <a href="/categories/programming/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
                   </a>
                 </span>
 
@@ -374,9 +389,35 @@
       
 
       
-        <h1>一些闲话来作为我博客的序章吧</h1>
-<p>可以说是“<strong>机缘巧合</strong>”吧，我从原来的自建服务器迁移到了<a href="https://pages.github.com/" target="_blank" rel="external"><strong>GitHub Pages</strong></a>上，具体的原因我绝的可以留到下一篇博文再说了😜</p>
-<h2>写作的缘由</h2>
+        <h1 id="IDEA-下Java-Webapp的环境搭建"><a href="#IDEA-下Java-Webapp的环境搭建" class="headerlink" title="IDEA 下Java Webapp的环境搭建"></a>IDEA 下Java Webapp的环境搭建</h1><p>本文在以下环境搭建：</p>
+<blockquote>
+<p>IntelliJ IDEA 2017.2.5<br>JDK 1.8.0_144<br>JRE: 1.8.0_152-release-915-b12 amd64<br>JVM: OpenJDK 64-Bit Server VM by JetBrains s.r.o<br>Apache Tomcat 9.0.1 Server<br>Windows 10 x64 15063.674</p>
+</blockquote>
+<p><strong>注意!!</strong> 本文不包括JAVA环境及Tomcat的搭建！</p>
+<a id="more"></a>
+<h2 id="写文缘由"><a href="#写文缘由" class="headerlink" title="写文缘由"></a>写文缘由</h2><p>可能有人问我既然不是写给新人看的，还不写重点的JAVA环境及Tomcat的搭建，你写这有什么用？那么你可以<strong>Ctrl+w</strong>了。因为现在网上的都是关于Eclipse或者老版本的IDEA的教程，所以想写一篇新的，顺带拉一波新人入IDEA的坑。</p>
+<p><del>我是受不了课堂上老师用着老的工具教着老的知识的人</del></p>
+<h3 id="新建Project"><a href="#新建Project" class="headerlink" title="新建Project"></a>新建Project</h3><img src="/image/IDEA/newproject.jpg" title="新建项目">
+<img src="/image/IDEA/select.jpg" title="选择应用module">
+<p>下一步随便给项目取一个名字</p>
+<h3 id="下面是重点了"><a href="#下面是重点了" class="headerlink" title="下面是重点了"></a><strong>下面是重点了</strong></h3><p>可能是我的环境太新了，和网上的教程生成的目录结构是不一样的。</p>
+<img src="/image/IDEA/struct.jpg" title="目录结构">
+<p>我们要新建2个文件夹，都是在web/WEB-INF/目录下</p>
+<ol>
+<li>classes &nbsp&nbsp&nbsp&nbsp –编译后的文件</li>
+<li>lib &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp –以后要引入的库</li>
+</ol>
+<h3 id="新的目录结构"><a href="#新的目录结构" class="headerlink" title="新的目录结构 "></a>新的目录结构 <img src="/image/IDEA/after.jpg" title="新建Servlet和新的目录结构"></h3><img src="/image/IDEA/newservlet.jpg" title="新建Servlet">
+<h3 id="更改项目目录结构"><a href="#更改项目目录结构" class="headerlink" title="更改项目目录结构 "></a>更改项目目录结构 <img src="/image/IDEA/newstruct.jpg" title="更改目录结构"></h3><h4 id="更改out目录"><a href="#更改out目录" class="headerlink" title="更改out目录 "></a>更改out目录 <img src="/image/IDEA/newout.jpg" title="更改out目录"></h4><h4 id="更改lib目录"><a href="#更改lib目录" class="headerlink" title="更改lib目录 "></a>更改lib目录 <img src="/image/IDEA/newlib.jpg" title="更改lib目录"></h4><h4 id="更改out结构"><a href="#更改out结构" class="headerlink" title="更改out结构 "></a>更改out结构 <img src="/image/IDEA/outset.jpg" title="更改out结构"></h4><h3 id="配置服务器"><a href="#配置服务器" class="headerlink" title="配置服务器 "></a>配置服务器 <img src="/image/IDEA/configserver.jpg" title="配置服务器"></h3><img src="/image/IDEA/setserver1.jpg">
+<img src="/image/IDEA/setserver2.jpg" title="配置服务器">
+<h2 id="测试代码"><a href="#测试代码" class="headerlink" title="测试代码"></a>测试代码</h2><p>Jsp 测试：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;%@ page contentType=<span class="string">"text/html;charset=UTF-8"</span> language=<span class="string">"java"</span> %&gt;</div><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">    &lt;title&gt;简单的JSP页面&lt;/title&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;h1&gt;Hello,World!&lt;/h1&gt;</div><div class="line">现在的时间是: &lt;%= <span class="keyword">new</span> java.util.Date() %&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<p>结果：</p>
+<img src="/image/IDEA/result1.jpg" title="Jsp页面测试">
+<p>Servlet 测试：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> javax.servlet.ServletException;</div><div class="line"><span class="keyword">import</span> javax.servlet.annotation.WebServlet;</div><div class="line"><span class="keyword">import</span> javax.servlet.http.HttpServlet;</div><div class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletRequest;</div><div class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletResponse;</div><div class="line"><span class="keyword">import</span> java.io.IOException;</div><div class="line"><span class="keyword">import</span> java.io.PrintWriter;</div><div class="line"></div><div class="line"><span class="meta">@WebServlet</span>(name = <span class="string">"HelloServlet"</span>, urlPatterns = &#123;<span class="string">"/helloServlet.do"</span>&#125;)</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloServlet</span> <span class="keyword">extends</span> <span class="title">HttpServlet</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doGet</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</div><div class="line">        response.setContentType(<span class="string">"text/html;charset=UTF-8"</span>);</div><div class="line">        PrintWriter out = response.getWriter();</div><div class="line">        out.println(<span class="string">"&lt;html&gt;"</span>);</div><div class="line">        out.println(<span class="string">"&lt;head&gt;&lt;title&gt;当前时间&lt;/title&gt;&lt;/head&gt;&lt;body&gt;"</span>);</div><div class="line">        out.println(<span class="string">"&lt;h3&gt;Hello,World!&lt;/h3&gt;"</span>);</div><div class="line">        out.println(<span class="string">"现在时间是："</span> + <span class="keyword">new</span> java.util.Date());</div><div class="line">        out.println(<span class="string">"&lt;/body&gt;"</span>);</div><div class="line">        out.println(<span class="string">"&lt;/html&gt;"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>结果：<br><img src="/image/IDEA/result1.jpg" title="Servlet测试"></p>
+<h2 id="搭建完成"><a href="#搭建完成" class="headerlink" title="搭建完成"></a>搭建完成</h2><p>至此完成了在IDEA上Servlet的环境搭建。</p>
 
       
     </div>
@@ -394,7 +435,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/闲谈/" rel="tag"># 闲谈</a>
+            <a href="/tags/environment/" rel="tag"># 环境搭建</a>
           
         </div>
       
@@ -520,7 +561,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -569,7 +610,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">一些闲话来作为我博客的序章吧</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">写作的缘由</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#IDEA-下Java-Webapp的环境搭建"><span class="nav-number">1.</span> <span class="nav-text">IDEA 下Java Webapp的环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#写文缘由"><span class="nav-number">1.1.</span> <span class="nav-text">写文缘由</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#新建Project"><span class="nav-number">1.1.1.</span> <span class="nav-text">新建Project</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下面是重点了"><span class="nav-number">1.1.2.</span> <span class="nav-text">下面是重点了</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新的目录结构"><span class="nav-number">1.1.3.</span> <span class="nav-text">新的目录结构 </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更改项目目录结构"><span class="nav-number">1.1.4.</span> <span class="nav-text">更改项目目录结构 </span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#更改out目录"><span class="nav-number">1.1.4.1.</span> <span class="nav-text">更改out目录 </span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更改lib目录"><span class="nav-number">1.1.4.2.</span> <span class="nav-text">更改lib目录 </span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更改out结构"><span class="nav-number">1.1.4.3.</span> <span class="nav-text">更改out结构 </span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置服务器"><span class="nav-number">1.1.5.</span> <span class="nav-text">配置服务器 </span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试代码"><span class="nav-number">1.2.</span> <span class="nav-text">测试代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建完成"><span class="nav-number">1.3.</span> <span class="nav-text">搭建完成</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -656,9 +697,6 @@
 
 
 
-  
-  
-
 
 
 
@@ -684,12 +722,6 @@
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-  
-  <script type="text/javascript" src="/lib/three/three.min.js"></script>
-
-  
-  <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
 
 
   
@@ -777,6 +809,21 @@
   
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
 
