@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="Hexo博客的备份可能是因为被害妄想症的原因吧，我怕博客的丢失，在我的硬盘，电脑和Git上备份了三份，在本博客的仓库的Public分支上就是我的博客文章的备份">
+<meta name="description" content="Hexo博客的备份可能是因为被害妄想症的原因吧，我怕博客的丢失，在我的硬盘，电脑和GitHub和私有服务器上备份了四份，在本博客的仓库的Public分支上就是我的博客文章的备份">
 <meta name="keywords" content="细节">
 <meta property="og:type" content="article">
 <meta property="og:title" content="博客备份-Git小技巧">
 <meta property="og:url" content="http://www.dccif.com/programming/博客备份-Git小技巧/index.html">
 <meta property="og:site_name" content="dccif 的个人博客">
-<meta property="og:description" content="Hexo博客的备份可能是因为被害妄想症的原因吧，我怕博客的丢失，在我的硬盘，电脑和Git上备份了三份，在本博客的仓库的Public分支上就是我的博客文章的备份">
+<meta property="og:description" content="Hexo博客的备份可能是因为被害妄想症的原因吧，我怕博客的丢失，在我的硬盘，电脑和GitHub和私有服务器上备份了四份，在本博客的仓库的Public分支上就是我的博客文章的备份">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-23T16:11:30.371Z">
+<meta property="og:updated_time" content="2017-10-24T06:09:55.505Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客备份-Git小技巧">
-<meta name="twitter:description" content="Hexo博客的备份可能是因为被害妄想症的原因吧，我怕博客的丢失，在我的硬盘，电脑和Git上备份了三份，在本博客的仓库的Public分支上就是我的博客文章的备份">
+<meta name="twitter:description" content="Hexo博客的备份可能是因为被害妄想症的原因吧，我怕博客的丢失，在我的硬盘，电脑和GitHub和私有服务器上备份了四份，在本博客的仓库的Public分支上就是我的博客文章的备份">
 
 
 
@@ -318,7 +318,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-10-24T00:11:30+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2017-10-24T14:09:55+08:00">
                 2017-10-24
               </time>
             
@@ -385,9 +385,12 @@
       
 
       
-        <h1 id="Hexo博客的备份"><a href="#Hexo博客的备份" class="headerlink" title="Hexo博客的备份"></a>Hexo博客的备份</h1><p>可能是因为被害妄想症的原因吧，我怕博客的丢失，在我的硬盘，电脑和Git上备份了三份，在本博客的仓库的Public分支上就是我的博客文章的备份</p>
+        <h1 id="Hexo博客的备份"><a href="#Hexo博客的备份" class="headerlink" title="Hexo博客的备份"></a>Hexo博客的备份</h1><p>可能是因为被害妄想症的原因吧，我怕博客的丢失，在我的硬盘，电脑和GitHub和私有服务器上备份了四份，在本博客的仓库的Public分支上就是我的博客文章的备份</p>
 <a id="more"></a>
-<h2 id="为什么要备份"><a href="#为什么要备份" class="headerlink" title="为什么要备份"></a>为什么要备份</h2><h2 id="为什么只备份文章"><a href="#为什么只备份文章" class="headerlink" title="为什么只备份文章"></a>为什么只备份文章</h2><h2 id="Git小技巧"><a href="#Git小技巧" class="headerlink" title="Git小技巧"></a>Git小技巧</h2><p>因为这次忽略文件是我临时添加的，再修改了<strong>.gitignore</strong>文件后在次上传并没有生效</p>
+<h2 id="为什么要备份"><a href="#为什么要备份" class="headerlink" title="为什么要备份"></a>为什么要备份</h2><p>备份的重要性我觉的不用我说了吧，为了防止数据的丢失 <del>虽然好像没什么宝贵的数据</del></p>
+<p>其实是突然发奇想想利用Git的分支来在一个仓库管理我的博客</p>
+<h2 id="为什么只备份文章"><a href="#为什么只备份文章" class="headerlink" title="为什么只备份文章"></a>为什么只备份文章</h2><p>毕竟文章本来就是给各位看的，但是私人的配置文件中有个人APIKey和一些个性化设定，这些可不好Public了😃</p>
+<h2 id="Git小技巧"><a href="#Git小技巧" class="headerlink" title="Git小技巧"></a>Git小技巧</h2><p>因为这次忽略文件是我临时添加的，再修改了<strong>.gitignore</strong>文件后在次上传并没有生效</p>
 <p>感谢pfeng的作者，本文参考<a href="http://www.pfeng.org/archives/840" target="_blank" rel="external">http://www.pfeng.org/archives/840</a></p>
 <p>在<strong>git</strong>中如果想忽略掉某个文件，不让这个文件提交到版本库中，可以使用修改根目录中 <strong>.gitignore</strong> 文件的方法（如无，则需自己手工建立此文件）。这个文件每一行保存了一个匹配的规则例如：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># 此为注释 – 将被 Git 忽略</div><div class="line">*.a         # 忽略所有 .a 结尾的文件</div><div class="line">!lib.a      # 但 lib.a 除外</div><div class="line">/TODO`      # 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO</div><div class="line">build/      # 忽略 build/ 目录下的所有文件</div><div class="line">doc/*.txt   # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt</div></pre></td></tr></table></figure>
