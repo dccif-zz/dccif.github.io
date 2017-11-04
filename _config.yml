@@ -58,6 +58,8 @@ category_map:
         编程: programming
         随想: gossipy
         清单: listing
+        算法: Algorithms
+        
 tag_map:
         环境搭建: environment
         细节: details
