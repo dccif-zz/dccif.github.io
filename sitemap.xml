@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.dccif.com/programming/%E9%80%92%E5%BD%92%E7%9A%84%E4%B8%A4%E7%A7%8D%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/</loc>
+    
+    <lastmod>2017-11-09T04:08:57.894Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.dccif.com/Algorithms/%E6%95%B0%E7%BB%84%E6%89%A9%E5%B1%95%E7%9A%84%E6%95%88%E7%8E%87/</loc>
     
-    <lastmod>2017-11-04T12:46:13.908Z</lastmod>
+    <lastmod>2017-11-04T13:15:48.820Z</lastmod>
     
   </url>
   
@@ -16,14 +23,14 @@
   </url>
   
   <url>
-    <loc>http://www.dccif.com/categories/index.html</loc>
+    <loc>http://www.dccif.com/about/index.html</loc>
     
     <lastmod>2017-10-27T12:12:00.130Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.dccif.com/about/index.html</loc>
+    <loc>http://www.dccif.com/categories/index.html</loc>
     
     <lastmod>2017-10-27T12:12:00.130Z</lastmod>
     
@@ -37,21 +44,14 @@
   </url>
   
   <url>
-    <loc>http://www.dccif.com/programming/%E9%80%92%E5%BD%92%E7%9A%84%E4%B8%A4%E7%A7%8D%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/</loc>
-    
-    <lastmod>2017-10-27T12:12:00.129Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.dccif.com/uncategorized/my-test-page/</loc>
+    <loc>http://www.dccif.com/programming/%E7%9F%AD%E8%B7%AF%E6%B1%82%E5%80%BC-Short-circuit-evaluation/</loc>
     
     <lastmod>2017-10-27T12:12:00.128Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.dccif.com/programming/%E7%9F%AD%E8%B7%AF%E6%B1%82%E5%80%BC-Short-circuit-evaluation/</loc>
+    <loc>http://www.dccif.com/uncategorized/my-test-page/</loc>
     
     <lastmod>2017-10-27T12:12:00.128Z</lastmod>
     
