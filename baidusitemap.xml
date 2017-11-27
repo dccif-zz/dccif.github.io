@@ -4,52 +4,12 @@
 
     
   <url>
-    <loc>http://www.dccif.com/programming/test4/</loc>
-    <lastmod>2017-11-27T08:50:42.568Z</lastmod>
+    <loc>http://www.dccif.com/programming/test3/</loc>
+    <lastmod>2017-11-27T09:04:40.194Z</lastmod>
     <data>
         <display>
-        <title>test4</title>
-        <pubTime>2017-11-27T08:50:42.000Z</pubTime>
-        
-        <tag>环境搭建</tag>
-         
-         
-           
-             
-              <breadCrumb title="编程" url="http://www.dccif.com/categories/programming/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A50/</loc>
-    <lastmod>2017-11-27T08:49:01.920Z</lastmod>
-    <data>
-        <display>
-        <title>同步0</title>
-        <pubTime>2017-11-27T08:49:01.000Z</pubTime>
-        
-        <tag>环境搭建</tag>
-         
-         
-           
-             
-              <breadCrumb title="编程" url="http://www.dccif.com/categories/programming/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A59/</loc>
-    <lastmod>2017-11-27T08:47:04.918Z</lastmod>
-    <data>
-        <display>
-        <title>同步9</title>
-        <pubTime>2017-11-27T08:46:43.000Z</pubTime>
+        <title>test3</title>
+        <pubTime>2017-11-27T09:04:24.000Z</pubTime>
         
         <tag>环境搭建</tag>
          
@@ -65,7 +25,7 @@
     
   <url>
     <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A5%E6%B5%8B%E8%AF%957/</loc>
-    <lastmod>2017-11-27T08:43:47.641Z</lastmod>
+    <lastmod>2017-11-27T09:03:55.314Z</lastmod>
     <data>
         <display>
         <title>同步测试7</title>
@@ -85,7 +45,7 @@
     
   <url>
     <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A5%E6%B5%8B%E8%AF%955/</loc>
-    <lastmod>2017-11-27T08:42:52.470Z</lastmod>
+    <lastmod>2017-11-27T09:03:55.314Z</lastmod>
     <data>
         <display>
         <title>同步测试5</title>
@@ -105,7 +65,7 @@
     
   <url>
     <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A5%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2017-11-27T08:42:52.469Z</lastmod>
+    <lastmod>2017-11-27T09:03:55.313Z</lastmod>
     <data>
         <display>
         <title>同步测试</title>
@@ -125,7 +85,7 @@
     
   <url>
     <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A5%E6%B5%8B%E8%AF%952/</loc>
-    <lastmod>2017-11-27T08:42:52.469Z</lastmod>
+    <lastmod>2017-11-27T09:03:55.313Z</lastmod>
     <data>
         <display>
         <title>同步测试2</title>
@@ -144,12 +104,12 @@
 
     
   <url>
-    <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A56/</loc>
-    <lastmod>2017-11-27T08:42:52.469Z</lastmod>
+    <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A59/</loc>
+    <lastmod>2017-11-27T09:03:55.313Z</lastmod>
     <data>
         <display>
-        <title>同步6</title>
-        <pubTime>2017-11-27T08:32:53.000Z</pubTime>
+        <title>同步9</title>
+        <pubTime>2017-11-27T08:46:43.000Z</pubTime>
         
         <tag>环境搭建</tag>
          
@@ -165,7 +125,7 @@
     
   <url>
     <loc>http://www.dccif.com/programming/%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2/</loc>
-    <lastmod>2017-11-27T08:42:52.468Z</lastmod>
+    <lastmod>2017-11-27T09:03:55.312Z</lastmod>
     <data>
         <display>
         <title>博客的一键部署</title>
@@ -184,12 +144,52 @@
 
     
   <url>
-    <loc>http://www.dccif.com/programming/y%E4%B8%8D6/</loc>
-    <lastmod>2017-11-27T08:40:55.963Z</lastmod>
+    <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A50/</loc>
+    <lastmod>2017-11-27T09:03:55.312Z</lastmod>
     <data>
         <display>
-        <title>y不6</title>
-        <pubTime>2017-11-27T08:38:30.000Z</pubTime>
+        <title>同步0</title>
+        <pubTime>2017-11-27T08:49:01.000Z</pubTime>
+        
+        <tag>环境搭建</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程" url="http://www.dccif.com/categories/programming/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A56/</loc>
+    <lastmod>2017-11-27T09:03:55.312Z</lastmod>
+    <data>
+        <display>
+        <title>同步6</title>
+        <pubTime>2017-11-27T08:32:53.000Z</pubTime>
+        
+        <tag>环境搭建</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程" url="http://www.dccif.com/categories/programming/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.dccif.com/programming/test4/</loc>
+    <lastmod>2017-11-27T09:03:55.311Z</lastmod>
+    <data>
+        <display>
+        <title>test4</title>
+        <pubTime>2017-11-27T08:50:42.000Z</pubTime>
         
         <tag>环境搭建</tag>
          
@@ -287,6 +287,21 @@
 
     
   <url>
+    <loc>http://www.dccif.com/uncategorized/my-test-page/</loc>
+    <lastmod>2017-11-27T08:14:34.212Z</lastmod>
+    <data>
+        <display>
+        <title>my test page</title>
+        <pubTime>2017-10-10T05:05:03.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.dccif.com/programming/%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD-Git%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2017-11-27T08:14:34.212Z</lastmod>
     <data>
@@ -301,21 +316,6 @@
              
               <breadCrumb title="编程" url="http://www.dccif.com/categories/programming/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.dccif.com/uncategorized/my-test-page/</loc>
-    <lastmod>2017-11-27T08:14:34.212Z</lastmod>
-    <data>
-        <display>
-        <title>my test page</title>
-        <pubTime>2017-10-10T05:05:03.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
