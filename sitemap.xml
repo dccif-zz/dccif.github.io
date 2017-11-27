@@ -2,86 +2,142 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.dccif.com/programming/%E9%80%92%E5%BD%92%E7%9A%84%E4%B8%A4%E7%A7%8D%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/</loc>
+    <loc>http://www.dccif.com/uncategorized/eree/</loc>
     
-    <lastmod>2017-11-09T04:08:57.894Z</lastmod>
+    <lastmod>2017-11-27T03:11:07.998Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.dccif.com/Algorithms/%E6%95%B0%E7%BB%84%E6%89%A9%E5%B1%95%E7%9A%84%E6%95%88%E7%8E%87/</loc>
+    <loc>http://www.dccif.com/uncategorized/efef/</loc>
     
-    <lastmod>2017-11-04T13:15:48.820Z</lastmod>
+    <lastmod>2017-11-27T03:07:44.965Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.dccif.com/uncategorized/dfefe/</loc>
+    
+    <lastmod>2017-11-27T03:01:21.125Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.dccif.com/uncategorized/ere/</loc>
+    
+    <lastmod>2017-11-27T02:57:06.851Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.dccif.com/uncategorized/dfwd/</loc>
+    
+    <lastmod>2017-11-27T02:56:26.098Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.dccif.com/uncategorized/dw/</loc>
+    
+    <lastmod>2017-11-27T02:55:50.348Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.dccif.com/uncategorized/er/</loc>
+    
+    <lastmod>2017-11-27T02:49:41.103Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.dccif.com/uncategorized/re/</loc>
+    
+    <lastmod>2017-11-27T02:48:58.318Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.dccif.com/programming/%E9%80%92%E5%BD%92%E7%9A%84%E4%B8%A4%E7%A7%8D%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/</loc>
+    
+    <lastmod>2017-11-09T04:18:12.827Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.dccif.com/tags/index.html</loc>
     
-    <lastmod>2017-10-27T12:12:00.143Z</lastmod>
+    <lastmod>2017-11-09T04:17:05.209Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.dccif.com/about/index.html</loc>
     
-    <lastmod>2017-10-27T12:12:00.130Z</lastmod>
+    <lastmod>2017-11-09T04:17:05.192Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.dccif.com/categories/index.html</loc>
     
-    <lastmod>2017-10-27T12:12:00.130Z</lastmod>
+    <lastmod>2017-11-09T04:17:05.192Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.dccif.com/listing/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F%E7%A8%8B%E5%BA%8F%E6%B8%85%E5%8D%95/</loc>
     
-    <lastmod>2017-10-27T12:12:00.129Z</lastmod>
+    <lastmod>2017-11-09T04:17:05.190Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.dccif.com/programming/%E7%9F%AD%E8%B7%AF%E6%B1%82%E5%80%BC-Short-circuit-evaluation/</loc>
     
-    <lastmod>2017-10-27T12:12:00.128Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.dccif.com/uncategorized/my-test-page/</loc>
-    
-    <lastmod>2017-10-27T12:12:00.128Z</lastmod>
+    <lastmod>2017-11-09T04:17:05.189Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.dccif.com/programming/%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD-Git%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
     
-    <lastmod>2017-10-27T12:12:00.128Z</lastmod>
+    <lastmod>2017-11-09T04:17:05.188Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.dccif.com/%E7%AE%97%E6%B3%95/%E6%95%B0%E7%BB%84%E6%89%A9%E5%B1%95%E7%9A%84%E6%95%88%E7%8E%87/</loc>
+    
+    <lastmod>2017-11-09T04:17:05.188Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.dccif.com/uncategorized/my-test-page/</loc>
+    
+    <lastmod>2017-11-09T04:17:05.188Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.dccif.com/listing/Ubuntu%E7%9A%84%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/</loc>
     
-    <lastmod>2017-10-27T12:12:00.127Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.dccif.com/gossipy/Prologue/</loc>
-    
-    <lastmod>2017-10-27T12:12:00.127Z</lastmod>
+    <lastmod>2017-11-09T04:17:05.187Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.dccif.com/programming/IDEA%E4%B8%8B%E7%9A%84Java-Webapp%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
     
-    <lastmod>2017-10-27T12:12:00.126Z</lastmod>
+    <lastmod>2017-11-09T04:17:05.187Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.dccif.com/gossipy/Prologue/</loc>
+    
+    <lastmod>2017-11-09T04:17:05.187Z</lastmod>
     
   </url>
   
