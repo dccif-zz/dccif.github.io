@@ -4,156 +4,6 @@
 
     
   <url>
-    <loc>http://www.dccif.com/uncategorized/wersef/</loc>
-    <lastmod>2017-11-27T03:14:04.908Z</lastmod>
-    <data>
-        <display>
-        <title>wersef</title>
-        <pubTime>2017-11-27T03:14:04.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.dccif.com/uncategorized/234/</loc>
-    <lastmod>2017-11-27T03:13:07.170Z</lastmod>
-    <data>
-        <display>
-        <title>234</title>
-        <pubTime>2017-11-27T03:13:07.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.dccif.com/uncategorized/ere-1/</loc>
-    <lastmod>2017-11-27T03:12:20.308Z</lastmod>
-    <data>
-        <display>
-        <title>ere</title>
-        <pubTime>2017-11-27T03:12:20.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.dccif.com/uncategorized/eree/</loc>
-    <lastmod>2017-11-27T03:11:07.998Z</lastmod>
-    <data>
-        <display>
-        <title>eree</title>
-        <pubTime>2017-11-27T03:11:07.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.dccif.com/uncategorized/efef/</loc>
-    <lastmod>2017-11-27T03:07:44.965Z</lastmod>
-    <data>
-        <display>
-        <title>efef</title>
-        <pubTime>2017-11-27T03:07:44.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.dccif.com/uncategorized/dfefe/</loc>
-    <lastmod>2017-11-27T03:01:21.125Z</lastmod>
-    <data>
-        <display>
-        <title>dfefe</title>
-        <pubTime>2017-11-27T03:01:21.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.dccif.com/uncategorized/dfwd/</loc>
-    <lastmod>2017-11-27T02:56:26.098Z</lastmod>
-    <data>
-        <display>
-        <title>dfwd</title>
-        <pubTime>2017-11-27T02:56:26.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.dccif.com/uncategorized/dw/</loc>
-    <lastmod>2017-11-27T02:55:50.348Z</lastmod>
-    <data>
-        <display>
-        <title>dw</title>
-        <pubTime>2017-11-27T02:55:50.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.dccif.com/uncategorized/er/</loc>
-    <lastmod>2017-11-27T02:49:41.103Z</lastmod>
-    <data>
-        <display>
-        <title>er</title>
-        <pubTime>2017-11-27T02:49:41.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.dccif.com/uncategorized/re/</loc>
-    <lastmod>2017-11-27T02:48:58.318Z</lastmod>
-    <data>
-        <display>
-        <title>re</title>
-        <pubTime>2017-11-27T02:48:58.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.dccif.com/programming/%E9%80%92%E5%BD%92%E7%9A%84%E4%B8%A4%E7%A7%8D%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2017-11-09T04:18:12.827Z</lastmod>
     <data>
@@ -252,7 +102,7 @@
 
     
   <url>
-    <loc>http://www.dccif.com/%E7%AE%97%E6%B3%95/%E6%95%B0%E7%BB%84%E6%89%A9%E5%B1%95%E7%9A%84%E6%95%88%E7%8E%87/</loc>
+    <loc>http://www.dccif.com/Algorithms/%E6%95%B0%E7%BB%84%E6%89%A9%E5%B1%95%E7%9A%84%E6%95%88%E7%8E%87/</loc>
     <lastmod>2017-11-09T04:17:05.188Z</lastmod>
     <data>
         <display>
@@ -264,7 +114,7 @@
          
            
              
-              <breadCrumb title="算法" url="http://www.dccif.com/categories/%E7%AE%97%E6%B3%95/"/>
+              <breadCrumb title="算法" url="http://www.dccif.com/categories/Algorithms/"/>
           
         </display>
     </data>
@@ -292,26 +142,6 @@
 
     
   <url>
-    <loc>http://www.dccif.com/programming/IDEA%E4%B8%8B%E7%9A%84Java-Webapp%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
-    <lastmod>2017-11-09T04:17:05.187Z</lastmod>
-    <data>
-        <display>
-        <title>IDEA下的Java Webapp环境搭建</title>
-        <pubTime>2017-10-14T07:14:55.000Z</pubTime>
-        
-        <tag>环境搭建</tag>
-         
-         
-           
-             
-              <breadCrumb title="编程" url="http://www.dccif.com/categories/programming/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.dccif.com/listing/Ubuntu%E7%9A%84%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/</loc>
     <lastmod>2017-11-09T04:17:05.187Z</lastmod>
     <data>
@@ -325,6 +155,26 @@
            
              
               <breadCrumb title="清单" url="http://www.dccif.com/categories/listing/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.dccif.com/programming/IDEA%E4%B8%8B%E7%9A%84Java-Webapp%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2017-11-09T04:17:05.187Z</lastmod>
+    <data>
+        <display>
+        <title>IDEA下的Java Webapp环境搭建</title>
+        <pubTime>2017-10-14T07:14:55.000Z</pubTime>
+        
+        <tag>环境搭建</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程" url="http://www.dccif.com/categories/programming/"/>
           
         </display>
     </data>
