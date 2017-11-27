@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="dccif 的个人博客">
 <meta property="og:description" content="Ubuntu下的个性化配置因为使用Linux开发方便的缘故，我在虚拟机上用全性能搭建了一个Ubuntu环境(别问我为什么不装双系统) 于是和之前那篇Windows的重装一样，也想写一篇文章记录一下，以后搭建时可以方便一些">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-27T12:12:00.127Z">
+<meta property="og:updated_time" content="2017-11-27T09:41:55.120Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu的个性化配置">
 <meta name="twitter:description" content="Ubuntu下的个性化配置因为使用Linux开发方便的缘故，我在虚拟机上用全性能搭建了一个Ubuntu环境(别问我为什么不装双系统) 于是和之前那篇Windows的重装一样，也想写一篇文章记录一下，以后搭建时可以方便一些">
@@ -318,8 +318,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-10-27T20:12:00+08:00">
-                2017-10-27
+              <time title="更新于" itemprop="dateModified" datetime="2017-11-27T17:41:55+08:00">
+                2017-11-27
               </time>
             
           </span>
@@ -388,7 +388,7 @@
         <h1 id="Ubuntu下的个性化配置"><a href="#Ubuntu下的个性化配置" class="headerlink" title="Ubuntu下的个性化配置"></a>Ubuntu下的个性化配置</h1><p>因为使用Linux开发方便的缘故，我在虚拟机上用全性能搭建了一个Ubuntu环境<del>(别问我为什么不装双系统)</del></p>
 <p>于是和之前那篇Windows的重装一样，也想写一篇文章记录一下，以后搭建时可以方便一些</p>
 <a id="more"></a>
-<h2 id="Java环境"><a href="#Java环境" class="headerlink" title="Java环境"></a>Java环境</h2><p>本文参考<a href="https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04" target="_blank" rel="external">How To Install Java with Apt-Get on Ubuntu 16.04</a></p>
+<h2 id="Java环境"><a href="#Java环境" class="headerlink" title="Java环境"></a>Java环境</h2><p>本文参考<a href="https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04" target="_blank" rel="noopener">How To Install Java with Apt-Get on Ubuntu 16.04</a></p>
 <p>这里是Java8</p>
 <p>添加Oracle’s PPA</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:webupd8team/java</div><div class="line">sudo apt-get update</div></pre></td></tr></table></figure>
@@ -422,7 +422,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">root:x:0:0:root:/root:/usr/bin/zsh</div><div class="line">song:x:1000:1000:song,,,:/home/song:/usr/bin/zsh</div></pre></td></tr></table></figure>
 <p>zsh 的配置文件是在用户目录下的 .zshrc</p>
 <p>每一行的配置前面都有#号,如果想要配置生效,去掉 #号即可.</p>
-<h2 id="补全插件-incr-zsh"><a href="#补全插件-incr-zsh" class="headerlink" title="补全插件 incr.zsh"></a>补全插件 incr.zsh</h2><p>这个插件的官网是: <a href="http://link.zhihu.com/?target=http%3A//mimosa-pudica.net/zsh-incremental.html" target="_blank" rel="external">Incremental completion on zsh</a></p>
+<h2 id="补全插件-incr-zsh"><a href="#补全插件-incr-zsh" class="headerlink" title="补全插件 incr.zsh"></a>补全插件 incr.zsh</h2><p>这个插件的官网是: <a href="http://link.zhihu.com/?target=http%3A//mimosa-pudica.net/zsh-incremental.html" target="_blank" rel="noopener">Incremental completion on zsh</a></p>
 <p>最新版本是 incr-0.2.zsh </p>
 <p>新建一个 incr-0.2.zsh 文件把他放进 用户目录下的 .oh-my-zsh/plugins/incr 目录下，没有的目录自己新建，其实放哪都一样。</p>
 <p>分别编辑 root 目录下的 .zshrc 和用户目录下的 .zsnrc</p>
