@@ -4,12 +4,12 @@
 
     
   <url>
-    <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A5%E6%B5%8B%E8%AF%955/</loc>
-    <lastmod>2017-11-27T08:30:56.775Z</lastmod>
+    <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A56/</loc>
+    <lastmod>2017-11-27T08:33:12.901Z</lastmod>
     <data>
         <display>
-        <title>同步测试5</title>
-        <pubTime>2017-11-27T08:30:22.000Z</pubTime>
+        <title>同步6</title>
+        <pubTime>2017-11-27T08:32:53.000Z</pubTime>
         
         <tag>环境搭建</tag>
          
@@ -25,7 +25,7 @@
     
   <url>
     <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A5%E6%B5%8B%E8%AF%952/</loc>
-    <lastmod>2017-11-27T08:30:03.135Z</lastmod>
+    <lastmod>2017-11-27T08:32:37.596Z</lastmod>
     <data>
         <display>
         <title>同步测试2</title>
@@ -44,12 +44,12 @@
 
     
   <url>
-    <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A5%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2017-11-27T08:30:03.135Z</lastmod>
+    <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A5%E6%B5%8B%E8%AF%955/</loc>
+    <lastmod>2017-11-27T08:32:37.596Z</lastmod>
     <data>
         <display>
-        <title>同步测试</title>
-        <pubTime>2017-11-27T07:53:29.000Z</pubTime>
+        <title>同步测试5</title>
+        <pubTime>2017-11-27T08:30:22.000Z</pubTime>
         
         <tag>环境搭建</tag>
          
@@ -65,7 +65,7 @@
     
   <url>
     <loc>http://www.dccif.com/programming/%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2/</loc>
-    <lastmod>2017-11-27T08:30:03.135Z</lastmod>
+    <lastmod>2017-11-27T08:32:37.595Z</lastmod>
     <data>
         <display>
         <title>博客的一键部署</title>
@@ -83,18 +83,15 @@
     </url>
 
     
-    
-    
-    
   <url>
-    <loc>http://www.dccif.com/programming/%E9%80%92%E5%BD%92%E7%9A%84%E4%B8%A4%E7%A7%8D%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/</loc>
-    <lastmod>2017-11-27T08:14:34.240Z</lastmod>
+    <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A5%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2017-11-27T08:32:37.595Z</lastmod>
     <data>
         <display>
-        <title>递归的两种优化方法</title>
-        <pubTime>2017-10-10T14:24:04.000Z</pubTime>
+        <title>同步测试</title>
+        <pubTime>2017-11-27T07:53:29.000Z</pubTime>
         
-        <tag>优化</tag>
+        <tag>环境搭建</tag>
          
          
            
@@ -105,6 +102,9 @@
     </data>
     </url>
 
+    
+    
+    
     
   <url>
     <loc>http://www.dccif.com/listing/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F%E7%A8%8B%E5%BA%8F%E6%B8%85%E5%8D%95/</loc>
@@ -120,6 +120,26 @@
            
              
               <breadCrumb title="清单" url="http://www.dccif.com/categories/listing/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.dccif.com/programming/%E9%80%92%E5%BD%92%E7%9A%84%E4%B8%A4%E7%A7%8D%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2017-11-27T08:14:34.240Z</lastmod>
+    <data>
+        <display>
+        <title>递归的两种优化方法</title>
+        <pubTime>2017-10-10T14:24:04.000Z</pubTime>
+        
+        <tag>优化</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程" url="http://www.dccif.com/categories/programming/"/>
           
         </display>
     </data>
@@ -167,21 +187,6 @@
 
     
   <url>
-    <loc>http://www.dccif.com/uncategorized/my-test-page/</loc>
-    <lastmod>2017-11-27T08:14:34.212Z</lastmod>
-    <data>
-        <display>
-        <title>my test page</title>
-        <pubTime>2017-10-10T05:05:03.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.dccif.com/programming/%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD-Git%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2017-11-27T08:14:34.212Z</lastmod>
     <data>
@@ -202,20 +207,15 @@
 
     
   <url>
-    <loc>http://www.dccif.com/listing/Ubuntu%E7%9A%84%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2017-11-27T08:14:34.211Z</lastmod>
+    <loc>http://www.dccif.com/uncategorized/my-test-page/</loc>
+    <lastmod>2017-11-27T08:14:34.212Z</lastmod>
     <data>
         <display>
-        <title>Ubuntu的个性化配置</title>
-        <pubTime>2017-10-27T11:40:10.000Z</pubTime>
+        <title>my test page</title>
+        <pubTime>2017-10-10T05:05:03.000Z</pubTime>
         
-        <tag>环境搭建</tag>
-         
          
            
-             
-              <breadCrumb title="清单" url="http://www.dccif.com/categories/listing/"/>
-          
         </display>
     </data>
     </url>
@@ -235,6 +235,26 @@
            
              
               <breadCrumb title="随想" url="http://www.dccif.com/categories/gossipy/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.dccif.com/listing/Ubuntu%E7%9A%84%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2017-11-27T08:14:34.211Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu的个性化配置</title>
+        <pubTime>2017-10-27T11:40:10.000Z</pubTime>
+        
+        <tag>环境搭建</tag>
+         
+         
+           
+             
+              <breadCrumb title="清单" url="http://www.dccif.com/categories/listing/"/>
           
         </display>
     </data>
