@@ -4,12 +4,12 @@
 
     
   <url>
-    <loc>http://www.dccif.com/programming/y%E4%B8%8D6/</loc>
-    <lastmod>2017-11-27T08:38:52.490Z</lastmod>
+    <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A5%E6%B5%8B%E8%AF%957/</loc>
+    <lastmod>2017-11-27T08:43:47.641Z</lastmod>
     <data>
         <display>
-        <title>y不6</title>
-        <pubTime>2017-11-27T08:38:30.000Z</pubTime>
+        <title>同步测试7</title>
+        <pubTime>2017-11-27T08:43:19.000Z</pubTime>
         
         <tag>环境搭建</tag>
          
@@ -25,7 +25,7 @@
     
   <url>
     <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A5%E6%B5%8B%E8%AF%955/</loc>
-    <lastmod>2017-11-27T08:38:07.655Z</lastmod>
+    <lastmod>2017-11-27T08:42:52.470Z</lastmod>
     <data>
         <display>
         <title>同步测试5</title>
@@ -45,7 +45,7 @@
     
   <url>
     <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A5%E6%B5%8B%E8%AF%952/</loc>
-    <lastmod>2017-11-27T08:38:07.653Z</lastmod>
+    <lastmod>2017-11-27T08:42:52.469Z</lastmod>
     <data>
         <display>
         <title>同步测试2</title>
@@ -64,28 +64,8 @@
 
     
   <url>
-    <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A56/</loc>
-    <lastmod>2017-11-27T08:38:07.653Z</lastmod>
-    <data>
-        <display>
-        <title>同步6</title>
-        <pubTime>2017-11-27T08:32:53.000Z</pubTime>
-        
-        <tag>环境搭建</tag>
-         
-         
-           
-             
-              <breadCrumb title="编程" url="http://www.dccif.com/categories/programming/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A5%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2017-11-27T08:38:07.653Z</lastmod>
+    <lastmod>2017-11-27T08:42:52.469Z</lastmod>
     <data>
         <display>
         <title>同步测试</title>
@@ -104,12 +84,52 @@
 
     
   <url>
+    <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A56/</loc>
+    <lastmod>2017-11-27T08:42:52.469Z</lastmod>
+    <data>
+        <display>
+        <title>同步6</title>
+        <pubTime>2017-11-27T08:32:53.000Z</pubTime>
+        
+        <tag>环境搭建</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程" url="http://www.dccif.com/categories/programming/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.dccif.com/programming/%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2/</loc>
-    <lastmod>2017-11-27T08:38:07.652Z</lastmod>
+    <lastmod>2017-11-27T08:42:52.468Z</lastmod>
     <data>
         <display>
         <title>博客的一键部署</title>
         <pubTime>2017-11-27T07:26:39.000Z</pubTime>
+        
+        <tag>环境搭建</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程" url="http://www.dccif.com/categories/programming/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.dccif.com/programming/y%E4%B8%8D6/</loc>
+    <lastmod>2017-11-27T08:40:55.963Z</lastmod>
+    <data>
+        <display>
+        <title>y不6</title>
+        <pubTime>2017-11-27T08:38:30.000Z</pubTime>
         
         <tag>环境搭建</tag>
          
@@ -242,26 +262,6 @@
 
     
   <url>
-    <loc>http://www.dccif.com/listing/Ubuntu%E7%9A%84%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2017-11-27T08:14:34.211Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu的个性化配置</title>
-        <pubTime>2017-10-27T11:40:10.000Z</pubTime>
-        
-        <tag>环境搭建</tag>
-         
-         
-           
-             
-              <breadCrumb title="清单" url="http://www.dccif.com/categories/listing/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.dccif.com/gossipy/Prologue/</loc>
     <lastmod>2017-11-27T08:14:34.211Z</lastmod>
     <data>
@@ -275,6 +275,26 @@
            
              
               <breadCrumb title="随想" url="http://www.dccif.com/categories/gossipy/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.dccif.com/listing/Ubuntu%E7%9A%84%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2017-11-27T08:14:34.211Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu的个性化配置</title>
+        <pubTime>2017-10-27T11:40:10.000Z</pubTime>
+        
+        <tag>环境搭建</tag>
+         
+         
+           
+             
+              <breadCrumb title="清单" url="http://www.dccif.com/categories/listing/"/>
           
         </display>
     </data>
