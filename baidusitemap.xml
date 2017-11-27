@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://www.dccif.com/programming/%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2/</loc>
+    <lastmod>2017-11-27T07:32:27.646Z</lastmod>
+    <data>
+        <display>
+        <title>博客的一键部署</title>
+        <pubTime>2017-11-27T07:26:39.000Z</pubTime>
+        
+        <tag>环境搭建</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程" url="http://www.dccif.com/categories/programming/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.dccif.com/programming/%E9%80%92%E5%BD%92%E7%9A%84%E4%B8%A4%E7%A7%8D%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2017-11-09T04:18:12.827Z</lastmod>
     <data>
@@ -82,26 +102,6 @@
 
     
   <url>
-    <loc>http://www.dccif.com/programming/%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD-Git%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2017-11-09T04:17:05.188Z</lastmod>
-    <data>
-        <display>
-        <title>博客备份-Git小技巧</title>
-        <pubTime>2017-10-23T15:53:27.000Z</pubTime>
-        
-        <tag>细节</tag>
-         
-         
-           
-             
-              <breadCrumb title="编程" url="http://www.dccif.com/categories/programming/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.dccif.com/Algorithms/%E6%95%B0%E7%BB%84%E6%89%A9%E5%B1%95%E7%9A%84%E6%95%88%E7%8E%87/</loc>
     <lastmod>2017-11-09T04:17:05.188Z</lastmod>
     <data>
@@ -115,6 +115,26 @@
            
              
               <breadCrumb title="算法" url="http://www.dccif.com/categories/Algorithms/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.dccif.com/programming/%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD-Git%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2017-11-09T04:17:05.188Z</lastmod>
+    <data>
+        <display>
+        <title>博客备份-Git小技巧</title>
+        <pubTime>2017-10-23T15:53:27.000Z</pubTime>
+        
+        <tag>细节</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程" url="http://www.dccif.com/categories/programming/"/>
           
         </display>
     </data>
