@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.dccif.com/programming/test4/</loc>
+    
+    <lastmod>2017-11-27T08:50:42.568Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A50/</loc>
     
     <lastmod>2017-11-27T08:49:01.920Z</lastmod>
@@ -114,13 +121,6 @@
   </url>
   
   <url>
-    <loc>http://www.dccif.com/uncategorized/my-test-page/</loc>
-    
-    <lastmod>2017-11-27T08:14:34.212Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.dccif.com/programming/%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD-Git%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
     
     <lastmod>2017-11-27T08:14:34.212Z</lastmod>
@@ -128,14 +128,21 @@
   </url>
   
   <url>
-    <loc>http://www.dccif.com/listing/Ubuntu%E7%9A%84%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/</loc>
+    <loc>http://www.dccif.com/uncategorized/my-test-page/</loc>
+    
+    <lastmod>2017-11-27T08:14:34.212Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.dccif.com/gossipy/Prologue/</loc>
     
     <lastmod>2017-11-27T08:14:34.211Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.dccif.com/gossipy/Prologue/</loc>
+    <loc>http://www.dccif.com/listing/Ubuntu%E7%9A%84%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/</loc>
     
     <lastmod>2017-11-27T08:14:34.211Z</lastmod>
     
