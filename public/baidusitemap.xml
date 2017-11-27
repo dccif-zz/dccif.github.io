@@ -3,6 +3,27 @@
 
 
     
+  <url>
+    <loc>http://www.dccif.com/programming/%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2/</loc>
+    <lastmod>2017-11-27T10:42:08.527Z</lastmod>
+    <data>
+        <display>
+        <title>博客的一键部署</title>
+        <pubTime>2017-11-27T10:31:26.000Z</pubTime>
+        
+        <tag>环境搭建</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程" url="http://www.dccif.com/categories/programming/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
     
     
   <url>
@@ -19,27 +40,6 @@
            
              
               <breadCrumb title="清单" url="http://www.dccif.com/categories/listing/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>http://www.dccif.com/programming/%E7%9F%AD%E8%B7%AF%E6%B1%82%E5%80%BC-Short-circuit-evaluation/</loc>
-    <lastmod>2017-11-27T09:41:55.122Z</lastmod>
-    <data>
-        <display>
-        <title>短路求值(Short-circuit evaluation)</title>
-        <pubTime>2017-10-10T08:05:27.000Z</pubTime>
-        
-        <tag>细节</tag>
-         
-         
-           
-             
-              <breadCrumb title="编程" url="http://www.dccif.com/categories/programming/"/>
           
         </display>
     </data>
@@ -67,12 +67,12 @@
 
     
   <url>
-    <loc>http://www.dccif.com/programming/%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD-Git%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2017-11-27T09:41:55.121Z</lastmod>
+    <loc>http://www.dccif.com/programming/%E7%9F%AD%E8%B7%AF%E6%B1%82%E5%80%BC-Short-circuit-evaluation/</loc>
+    <lastmod>2017-11-27T09:41:55.122Z</lastmod>
     <data>
         <display>
-        <title>博客备份-Git小技巧</title>
-        <pubTime>2017-10-23T15:53:27.000Z</pubTime>
+        <title>短路求值(Short-circuit evaluation)</title>
+        <pubTime>2017-10-10T08:05:27.000Z</pubTime>
         
         <tag>细节</tag>
          
@@ -107,6 +107,26 @@
 
     
   <url>
+    <loc>http://www.dccif.com/programming/%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD-Git%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2017-11-27T09:41:55.121Z</lastmod>
+    <data>
+        <display>
+        <title>博客备份-Git小技巧</title>
+        <pubTime>2017-10-23T15:53:27.000Z</pubTime>
+        
+        <tag>细节</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程" url="http://www.dccif.com/categories/programming/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.dccif.com/listing/Ubuntu%E7%9A%84%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/</loc>
     <lastmod>2017-11-27T09:41:55.120Z</lastmod>
     <data>
@@ -127,6 +147,21 @@
 
     
   <url>
+    <loc>http://www.dccif.com/uncategorized/my-test-page/</loc>
+    <lastmod>2017-11-27T09:41:55.120Z</lastmod>
+    <data>
+        <display>
+        <title>my test page</title>
+        <pubTime>2017-10-10T05:05:03.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.dccif.com/gossipy/Prologue/</loc>
     <lastmod>2017-11-27T09:41:55.120Z</lastmod>
     <data>
@@ -141,21 +176,6 @@
              
               <breadCrumb title="随想" url="http://www.dccif.com/categories/gossipy/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.dccif.com/uncategorized/my-test-page/</loc>
-    <lastmod>2017-11-27T09:41:55.120Z</lastmod>
-    <data>
-        <display>
-        <title>my test page</title>
-        <pubTime>2017-10-10T05:05:03.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
