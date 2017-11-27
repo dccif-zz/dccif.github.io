@@ -4,12 +4,12 @@
 
     
   <url>
-    <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A5%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2017-11-27T07:53:29.466Z</lastmod>
+    <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A5%E6%B5%8B%E8%AF%952/</loc>
+    <lastmod>2017-11-27T08:03:10.445Z</lastmod>
     <data>
         <display>
-        <title>同步测试</title>
-        <pubTime>2017-11-27T07:53:29.000Z</pubTime>
+        <title>同步测试2</title>
+        <pubTime>2017-11-27T08:02:37.000Z</pubTime>
         
         <tag>环境搭建</tag>
          
@@ -25,11 +25,31 @@
     
   <url>
     <loc>http://www.dccif.com/programming/%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2/</loc>
-    <lastmod>2017-11-27T07:35:19.928Z</lastmod>
+    <lastmod>2017-11-27T07:58:56.179Z</lastmod>
     <data>
         <display>
         <title>博客的一键部署</title>
         <pubTime>2017-11-27T07:26:39.000Z</pubTime>
+        
+        <tag>环境搭建</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程" url="http://www.dccif.com/categories/programming/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.dccif.com/programming/%E5%90%8C%E6%AD%A5%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2017-11-27T07:58:56.179Z</lastmod>
+    <data>
+        <display>
+        <title>同步测试</title>
+        <pubTime>2017-11-27T07:53:29.000Z</pubTime>
         
         <tag>环境搭建</tag>
          
@@ -107,20 +127,15 @@
 
     
   <url>
-    <loc>http://www.dccif.com/programming/%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD-Git%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
+    <loc>http://www.dccif.com/uncategorized/my-test-page/</loc>
     <lastmod>2017-11-09T04:17:05.188Z</lastmod>
     <data>
         <display>
-        <title>博客备份-Git小技巧</title>
-        <pubTime>2017-10-23T15:53:27.000Z</pubTime>
+        <title>my test page</title>
+        <pubTime>2017-10-10T05:05:03.000Z</pubTime>
         
-        <tag>细节</tag>
-         
          
            
-             
-              <breadCrumb title="编程" url="http://www.dccif.com/categories/programming/"/>
-          
         </display>
     </data>
     </url>
@@ -147,29 +162,14 @@
 
     
   <url>
-    <loc>http://www.dccif.com/uncategorized/my-test-page/</loc>
+    <loc>http://www.dccif.com/programming/%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD-Git%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2017-11-09T04:17:05.188Z</lastmod>
     <data>
         <display>
-        <title>my test page</title>
-        <pubTime>2017-10-10T05:05:03.000Z</pubTime>
+        <title>博客备份-Git小技巧</title>
+        <pubTime>2017-10-23T15:53:27.000Z</pubTime>
         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.dccif.com/programming/IDEA%E4%B8%8B%E7%9A%84Java-Webapp%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
-    <lastmod>2017-11-09T04:17:05.187Z</lastmod>
-    <data>
-        <display>
-        <title>IDEA下的Java Webapp环境搭建</title>
-        <pubTime>2017-10-14T07:14:55.000Z</pubTime>
-        
-        <tag>环境搭建</tag>
+        <tag>细节</tag>
          
          
            
@@ -215,6 +215,26 @@
            
              
               <breadCrumb title="随想" url="http://www.dccif.com/categories/gossipy/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.dccif.com/programming/IDEA%E4%B8%8B%E7%9A%84Java-Webapp%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2017-11-09T04:17:05.187Z</lastmod>
+    <data>
+        <display>
+        <title>IDEA下的Java Webapp环境搭建</title>
+        <pubTime>2017-10-14T07:14:55.000Z</pubTime>
+        
+        <tag>环境搭建</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程" url="http://www.dccif.com/categories/programming/"/>
           
         </display>
     </data>
