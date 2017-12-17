@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="dccif 的个人博客">
 <meta property="og:description" content="短路求值 Short-circuit evaluation  最早是在php中接触到的这种求值，后来在学习Lisp中又一次接触到了，于是想写一篇文章记录一下，并分享一下，这个被我忽略的可能可以说是细节的点吧">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-27T10:53:12.443Z">
+<meta property="og:updated_time" content="2017-12-07T12:25:31.489Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="短路求值(Short-circuit evaluation)">
 <meta name="twitter:description" content="短路求值 Short-circuit evaluation  最早是在php中接触到的这种求值，后来在学习Lisp中又一次接触到了，于是想写一篇文章记录一下，并分享一下，这个被我忽略的可能可以说是细节的点吧">
@@ -318,8 +318,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-11-27T18:53:12+08:00">
-                2017-11-27
+              <time title="更新于" itemprop="dateModified" datetime="2017-12-07T20:25:31+08:00">
+                2017-12-07
               </time>
             
           </span>
@@ -571,7 +571,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -642,7 +642,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#短路求值"><span class="nav-number">1.</span> <span class="nav-text">短路求值</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是短路求值（Short-circuit-evaluation）"><span class="nav-number">1.1.</span> <span class="nav-text">什么是短路求值（Short-circuit evaluation）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一些例子"><span class="nav-number">1.2.</span> <span class="nav-text">一些例子</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#普通的C程序"><span class="nav-number">1.2.1.</span> <span class="nav-text">普通的C程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用了短路求值的C程序"><span class="nav-number">1.2.2.</span> <span class="nav-text">使用了短路求值的C程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最近学习的Lisp中的例子："><span class="nav-number">1.2.3.</span> <span class="nav-text">最近学习的Lisp中的例子：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#可能的问题："><span class="nav-number">1.3.</span> <span class="nav-text">可能的问题：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#支持的语言"><span class="nav-number">1.4.</span> <span class="nav-text">支持的语言</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#短路求值"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x77ED;&#x8DEF;&#x6C42;&#x503C;" class="headerlink" title="&#x77ED;&#x8DEF;&#x6C42;&#x503C;"></a>&#x77ED;&#x8DEF;&#x6C42;&#x503C;</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是短路求值（Short-circuit-evaluation）"><span class="nav-number">1.1.</span> <span class="nav-text"><a href="#&#x4EC0;&#x4E48;&#x662F;&#x77ED;&#x8DEF;&#x6C42;&#x503C;&#xFF08;Short-circuit-evaluation&#xFF09;" class="headerlink" title="&#x4EC0;&#x4E48;&#x662F;&#x77ED;&#x8DEF;&#x6C42;&#x503C;&#xFF08;Short-circuit evaluation&#xFF09;"></a>&#x4EC0;&#x4E48;&#x662F;<strong>&#x77ED;&#x8DEF;&#x6C42;&#x503C;&#xFF08;Short-circuit evaluation&#xFF09;</strong></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一些例子"><span class="nav-number">1.2.</span> <span class="nav-text"><a href="#&#x4E00;&#x4E9B;&#x4F8B;&#x5B50;" class="headerlink" title="&#x4E00;&#x4E9B;&#x4F8B;&#x5B50;"></a>&#x4E00;&#x4E9B;&#x4F8B;&#x5B50;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#普通的C程序"><span class="nav-number">1.2.1.</span> <span class="nav-text"><a href="#&#x666E;&#x901A;&#x7684;C&#x7A0B;&#x5E8F;" class="headerlink" title="&#x666E;&#x901A;&#x7684;C&#x7A0B;&#x5E8F;"></a>&#x666E;&#x901A;&#x7684;<strong>C</strong>&#x7A0B;&#x5E8F;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用了短路求值的C程序"><span class="nav-number">1.2.2.</span> <span class="nav-text"><a href="#&#x4F7F;&#x7528;&#x4E86;&#x77ED;&#x8DEF;&#x6C42;&#x503C;&#x7684;C&#x7A0B;&#x5E8F;" class="headerlink" title="&#x4F7F;&#x7528;&#x4E86;&#x77ED;&#x8DEF;&#x6C42;&#x503C;&#x7684;C&#x7A0B;&#x5E8F;"></a>&#x4F7F;&#x7528;&#x4E86;&#x77ED;&#x8DEF;&#x6C42;&#x503C;&#x7684;<strong>C</strong>&#x7A0B;&#x5E8F;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最近学习的Lisp中的例子："><span class="nav-number">1.2.3.</span> <span class="nav-text"><a href="#&#x6700;&#x8FD1;&#x5B66;&#x4E60;&#x7684;Lisp&#x4E2D;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;" class="headerlink" title="&#x6700;&#x8FD1;&#x5B66;&#x4E60;&#x7684;Lisp&#x4E2D;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;"></a>&#x6700;&#x8FD1;&#x5B66;&#x4E60;&#x7684;Lisp&#x4E2D;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#可能的问题："><span class="nav-number">1.3.</span> <span class="nav-text"><a href="#&#x53EF;&#x80FD;&#x7684;&#x95EE;&#x9898;&#xFF1A;" class="headerlink" title="&#x53EF;&#x80FD;&#x7684;&#x95EE;&#x9898;&#xFF1A;"></a>&#x53EF;&#x80FD;&#x7684;&#x95EE;&#x9898;&#xFF1A;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#支持的语言"><span class="nav-number">1.4.</span> <span class="nav-text"><a href="#&#x652F;&#x6301;&#x7684;&#x8BED;&#x8A00;" class="headerlink" title="&#x652F;&#x6301;&#x7684;&#x8BED;&#x8A00;"></a>&#x652F;&#x6301;&#x7684;&#x8BED;&#x8A00;</span></a></li></ol></li></ol></div>
             
 
           </div>

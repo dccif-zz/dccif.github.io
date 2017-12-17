@@ -2,100 +2,93 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.dccif.com/programming/TestCommit/</loc>
-    
-    <lastmod>2017-11-27T14:20:29.044Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.dccif.com/tags/index.html</loc>
     
-    <lastmod>2017-11-27T10:53:12.459Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.dccif.com/about/index.html</loc>
-    
-    <lastmod>2017-11-27T10:53:12.445Z</lastmod>
+    <lastmod>2017-12-07T12:25:31.521Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.dccif.com/categories/index.html</loc>
     
-    <lastmod>2017-11-27T10:53:12.445Z</lastmod>
+    <lastmod>2017-12-07T12:25:31.495Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.dccif.com/about/index.html</loc>
+    
+    <lastmod>2017-12-07T12:25:31.493Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.dccif.com/listing/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F%E7%A8%8B%E5%BA%8F%E6%B8%85%E5%8D%95/</loc>
     
-    <lastmod>2017-11-27T10:53:12.444Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.dccif.com/programming/%E7%9F%AD%E8%B7%AF%E6%B1%82%E5%80%BC-Short-circuit-evaluation/</loc>
-    
-    <lastmod>2017-11-27T10:53:12.443Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.dccif.com/Algorithms/%E6%95%B0%E7%BB%84%E6%89%A9%E5%B1%95%E7%9A%84%E6%95%88%E7%8E%87/</loc>
-    
-    <lastmod>2017-11-27T10:53:12.443Z</lastmod>
+    <lastmod>2017-12-07T12:25:31.490Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.dccif.com/programming/%E9%80%92%E5%BD%92%E7%9A%84%E4%B8%A4%E7%A7%8D%E4%BC%98%E5%8C%96%E6%96%B9%E6%B3%95/</loc>
     
-    <lastmod>2017-11-27T10:53:12.443Z</lastmod>
+    <lastmod>2017-12-07T12:25:31.489Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.dccif.com/programming/%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD-Git%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
+    <loc>http://www.dccif.com/programming/%E7%9F%AD%E8%B7%AF%E6%B1%82%E5%80%BC-Short-circuit-evaluation/</loc>
     
-    <lastmod>2017-11-27T10:53:12.442Z</lastmod>
+    <lastmod>2017-12-07T12:25:31.489Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.dccif.com/Algorithms/%E6%95%B0%E7%BB%84%E6%89%A9%E5%B1%95%E7%9A%84%E6%95%88%E7%8E%87/</loc>
+    
+    <lastmod>2017-12-07T12:25:31.488Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.dccif.com/programming/%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2/</loc>
     
-    <lastmod>2017-11-27T10:53:12.442Z</lastmod>
+    <lastmod>2017-12-07T12:25:31.487Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.dccif.com/programming/%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD-Git%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
+    
+    <lastmod>2017-12-07T12:25:31.486Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.dccif.com/uncategorized/my-test-page/</loc>
     
-    <lastmod>2017-11-27T10:53:12.442Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.dccif.com/gossipy/Prologue/</loc>
-    
-    <lastmod>2017-11-27T10:53:12.441Z</lastmod>
+    <lastmod>2017-12-07T12:25:31.485Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.dccif.com/listing/Ubuntu%E7%9A%84%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/</loc>
     
-    <lastmod>2017-11-27T10:53:12.441Z</lastmod>
+    <lastmod>2017-12-07T12:25:31.484Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.dccif.com/gossipy/Prologue/</loc>
+    
+    <lastmod>2017-12-07T12:25:31.483Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.dccif.com/programming/IDEA%E4%B8%8B%E7%9A%84Java-Webapp%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
     
-    <lastmod>2017-11-27T10:53:12.440Z</lastmod>
+    <lastmod>2017-12-07T12:25:31.482Z</lastmod>
     
   </url>
   
