@@ -391,35 +391,35 @@
 <h2 id="Java环境"><a href="#Java环境" class="headerlink" title="Java环境"></a>Java环境</h2><p>本文参考<a href="https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04" target="_blank" rel="noopener">How To Install Java with Apt-Get on Ubuntu 16.04</a></p>
 <p>这里是Java8</p>
 <p>添加Oracle’s PPA</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:webupd8team/java</div><div class="line">sudo apt-get update</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo add-apt-repository ppa:webupd8team/java</span><br><span class="line">sudo apt-get update</span><br></pre></td></tr></table></figure>
 <p>Then, depending on the version you want to install, execute one of the following commands:</p>
-<h3 id="Oracle-JDK-8"><a href="#Oracle-JDK-8" class="headerlink" title="Oracle JDK 8"></a>Oracle JDK 8</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install oracle-java8-installer</div></pre></td></tr></table></figure>
+<h3 id="Oracle-JDK-8"><a href="#Oracle-JDK-8" class="headerlink" title="Oracle JDK 8"></a>Oracle JDK 8</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install oracle-java8-installer</span><br></pre></td></tr></table></figure>
 <h3 id="Linux下的添加Java环境变量"><a href="#Linux下的添加Java环境变量" class="headerlink" title="Linux下的添加Java环境变量"></a>Linux下的添加Java环境变量</h3><p>Many programs, such as Java servers, use the <code>JAVA_HOME</code> environment variable to determine the Java installation location. To set this environment variable, we will first need to find out where Java is installed. You can do this by executing the same command as in the previous section:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo update-alternatives --config java</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo update-alternatives --config java</span><br></pre></td></tr></table></figure>
 <p>Copy the path from your preferred installation and then open <code>/etc/environment</code> using <code>nano</code> or your favorite text editor.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo nano /etc/environment</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/environment</span><br></pre></td></tr></table></figure>
 <p>At the end of this file, add the following line, making sure to replace the highlighted path with your own copied path.</p>
 <p>/etc/environment</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">JAVA_HOME=&quot;/usr/lib/jvm/java-8-oracle&quot;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">JAVA_HOME=&quot;/usr/lib/jvm/java-8-oracle&quot;</span><br></pre></td></tr></table></figure>
 <p>Save and exit the file, and reload it.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">source /etc/environment</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/environment</span><br></pre></td></tr></table></figure>
 <p>You can now test whether the environment variable has been set by executing the following command:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">echo $JAVA_HOME</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo $JAVA_HOME</span><br></pre></td></tr></table></figure>
 <h2 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h2><p>Vim-gtk 官方源已经有最新的了，直接apt install 就行了</p>
 <p>Emacs (需要手动添加源)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:kelleyk/emacs</div><div class="line">sudo apt update</div><div class="line">sudo apt install emacs25</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo add-apt-repository ppa:kelleyk/emacs</span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt install emacs25</span><br></pre></td></tr></table></figure>
 <p>其余jetbrains全家桶，因为没有VS只好用Clion了</p>
 <h2 id="oh-my-zsh配置zsh"><a href="#oh-my-zsh配置zsh" class="headerlink" title="oh-my-zsh配置zsh"></a>oh-my-zsh配置zsh</h2><p>ubuntu默认不是zsh，输入下面命令安装 zsh</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install zsh</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install zsh</span><br></pre></td></tr></table></figure>
 <p>接下来我们需要下载 oh-my-zsh 项目来帮我们配置 zsh，注意此时一定要用 超级权限。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh</span><br></pre></td></tr></table></figure>
 <p>查看你的zsh位置，输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cat /etc/shells</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">➜  ~ cat /etc/shells</div><div class="line"># /etc/shells: valid login shells</div><div class="line">/bin/sh</div><div class="line">/bin/dash</div><div class="line">/bin/bash</div><div class="line">/bin/rbash</div><div class="line">/bin/zsh</div><div class="line">/usr/bin/zsh</div><div class="line">➜  ~</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /etc/shells</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">➜  ~ cat /etc/shells</span><br><span class="line"># /etc/shells: valid login shells</span><br><span class="line">/bin/sh</span><br><span class="line">/bin/dash</span><br><span class="line">/bin/bash</span><br><span class="line">/bin/rbash</span><br><span class="line">/bin/zsh</span><br><span class="line">/usr/bin/zsh</span><br><span class="line">➜  ~</span><br></pre></td></tr></table></figure>
 <p>更改默认 shell，输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo vim /etc/passwd</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/passwd</span><br></pre></td></tr></table></figure>
 <p>更改 root 和用户默认 shell</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">root:x:0:0:root:/root:/usr/bin/zsh</div><div class="line">song:x:1000:1000:song,,,:/home/song:/usr/bin/zsh</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">root:x:0:0:root:/root:/usr/bin/zsh</span><br><span class="line">song:x:1000:1000:song,,,:/home/song:/usr/bin/zsh</span><br></pre></td></tr></table></figure>
 <p>zsh 的配置文件是在用户目录下的 .zshrc</p>
 <p>每一行的配置前面都有#号,如果想要配置生效,去掉 #号即可.</p>
 <h2 id="补全插件-incr-zsh"><a href="#补全插件-incr-zsh" class="headerlink" title="补全插件 incr.zsh"></a>补全插件 incr.zsh</h2><p>这个插件的官网是: <a href="http://link.zhihu.com/?target=http%3A//mimosa-pudica.net/zsh-incremental.html" target="_blank" rel="noopener">Incremental completion on zsh</a></p>
@@ -427,11 +427,11 @@
 <p>新建一个 incr-0.2.zsh 文件把他放进 用户目录下的 .oh-my-zsh/plugins/incr 目录下，没有的目录自己新建，其实放哪都一样。</p>
 <p>分别编辑 root 目录下的 .zshrc 和用户目录下的 .zsnrc</p>
 <p>加上一句</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">source /home/song/.oh-my-zsh/plugins/incr/incr-0.2.zsh</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /home/song/.oh-my-zsh/plugins/incr/incr-0.2.zsh</span><br></pre></td></tr></table></figure>
 <p>/home/song/.oh-my-zsh/plugins/incr 是你放的不同的目录。</p>
 <p>最后还有一个小问题，原来我们用的 超级用户创建的 oh-my-zsh 导致 .oh-my-zsh 目录下的缓存目录 cache 所有者和用户组也是root 这样就导致我们在普通用户下使用有些问题，下面改变 cache的所有者</p>
 <p>输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">chown song:song cache/ -R</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown song:song cache/ -R</span><br></pre></td></tr></table></figure>
 <p>这样就不会在命令提示时候弹出错误了。</p>
 
       
@@ -556,7 +556,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -578,7 +578,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -601,6 +601,12 @@
                     <a href="mailto:heyujieboy@gmail.com" target="_blank" title="E-Mail">
                       
                         <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.dccif.top" target="_blank" title="Blog">
+                      
+                        <i class="fa fa-fw fa-globe"></i>Blog</a>
                   </span>
                 
             </div>

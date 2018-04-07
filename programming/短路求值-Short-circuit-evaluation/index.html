@@ -396,19 +396,19 @@
 </blockquote>
 <p>概况来说就是在求<strong>布尔表达式</strong>的时候程序并不会执行全部的<strong>Expression</strong></p>
 <p>比如<strong>AND</strong>或者<strong>OR</strong>操作时如果后面第一个Expression为True，那么之后的Expression就不会再求值了。</p>
-<h2 id="一些例子"><a href="#一些例子" class="headerlink" title="一些例子"></a>一些例子</h2><h3 id="普通的C程序"><a href="#普通的C程序" class="headerlink" title="普通的C程序"></a>普通的<strong>C</strong>程序</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> denom = <span class="number">0</span>;</div><div class="line"><span class="keyword">if</span> (denom != <span class="number">0</span> &amp;&amp; num / denom)</div><div class="line">&#123;</div><div class="line">    ... <span class="comment">// ensures that calculating num/denom never results in divide-by-zero error   </span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="使用了短路求值的C程序"><a href="#使用了短路求值的C程序" class="headerlink" title="使用了短路求值的C程序"></a>使用了短路求值的<strong>C</strong>程序</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> a = <span class="number">0</span>;</div><div class="line"><span class="keyword">if</span> (a != <span class="number">0</span> &amp;&amp; myfunc(b))</div><div class="line">&#123;</div><div class="line">    do_something();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="一些例子"><a href="#一些例子" class="headerlink" title="一些例子"></a>一些例子</h2><h3 id="普通的C程序"><a href="#普通的C程序" class="headerlink" title="普通的C程序"></a>普通的<strong>C</strong>程序</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> denom = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">if</span> (denom != <span class="number">0</span> &amp;&amp; num / denom)</span><br><span class="line">&#123;</span><br><span class="line">    ... <span class="comment">// ensures that calculating num/denom never results in divide-by-zero error   </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="使用了短路求值的C程序"><a href="#使用了短路求值的C程序" class="headerlink" title="使用了短路求值的C程序"></a>使用了短路求值的<strong>C</strong>程序</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">if</span> (a != <span class="number">0</span> &amp;&amp; myfunc(b))</span><br><span class="line">&#123;</span><br><span class="line">    do_something();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>在这个例子中<strong>&amp;&amp;</strong>后的<strong>myfunc(b)</strong>将永远不会执行，因为<strong>a!=0</strong>永远是<strong>FALSE</strong>。<br>利用短路求值有2个有用的技巧</p>
 <ol>
 <li>如果条件判断的expression需要复杂的计算，并且第一个结果为<strong>False</strong>，则可以不计算之后的表达式</li>
 <li>可以构造一个expression来使第二个可能会发生运行时错误的expression成功运行</li>
 </ol>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">bool</span> <span class="title">is_first_char_valid_alpha_unsafe</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *p)</span></span></div><div class="line"><span class="function"></span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="built_in">isalpha</span>(p[<span class="number">0</span>]); <span class="comment">// SEGFAULT highly possible with p == NULL</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">bool</span> <span class="title">is_first_char_valid_alpha</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *p)</span></span></div><div class="line"><span class="function"></span>&#123;</div><div class="line">    <span class="keyword">return</span> p != <span class="literal">NULL</span> &amp;&amp; <span class="built_in">isalpha</span>(p[<span class="number">0</span>]); <span class="comment">// 1) no unneeded isalpha() execution with p == NULL, 2) no SEGFAULT risk</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">is_first_char_valid_alpha_unsafe</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *p)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">isalpha</span>(p[<span class="number">0</span>]); <span class="comment">// SEGFAULT highly possible with p == NULL</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">is_first_char_valid_alpha</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *p)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> p != <span class="literal">NULL</span> &amp;&amp; <span class="built_in">isalpha</span>(p[<span class="number">0</span>]); <span class="comment">// 1) no unneeded isalpha() execution with p == NULL, 2) no SEGFAULT risk</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这个例子避免了空指针</p>
-<h3 id="最近学习的Lisp中的例子："><a href="#最近学习的Lisp中的例子：" class="headerlink" title="最近学习的Lisp中的例子："></a>最近学习的Lisp中的例子：</h3><figure class="highlight lisp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">(<span class="name">defparameter</span> *is-it-even* <span class="literal">nil</span>)</div><div class="line">(<span class="name">or</span> (<span class="name">oddp</span> <span class="number">5</span>) </div><div class="line">(<span class="name">setf</span> *is-it-even* <span class="literal">t</span>))</div></pre></td></tr></table></figure>
+<h3 id="最近学习的Lisp中的例子："><a href="#最近学习的Lisp中的例子：" class="headerlink" title="最近学习的Lisp中的例子："></a>最近学习的Lisp中的例子：</h3><figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name">defparameter</span> *is-it-even* <span class="literal">nil</span>)</span><br><span class="line">(<span class="name">or</span> (<span class="name">oddp</span> <span class="number">5</span>) </span><br><span class="line">(<span class="name">setf</span> *is-it-even* <span class="literal">t</span>))</span><br></pre></td></tr></table></figure>
 <p>利用短路求值，用<strong>OR</strong>实现了条件判断</p>
 <h2 id="可能的问题："><a href="#可能的问题：" class="headerlink" title="可能的问题："></a>可能的问题：</h2><p>尽管有上面说的优点，但是可能会带来没有意识到的问题，比如：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> (expressionA &amp;&amp; myfunc(b)) &#123;</div><div class="line">    do_something();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (expressionA &amp;&amp; myfunc(b)) &#123;</span><br><span class="line">    do_something();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>当<strong>expressionA</strong>为<strong>True</strong>时无论<strong>do_something()</strong>是否执行，<strong>myfunc(b)</strong>都会执行，例如分配系统资源的操作。</p>
 <p>相反，<strong>expressionA</strong>为<strong>False</strong>时<strong>myfunc(b)</strong>永远不会执行</p>
 <h2 id="支持的语言"><a href="#支持的语言" class="headerlink" title="支持的语言"></a>支持的语言</h2><p><strong>并不是所有语言和所有操作符支持的</strong><br>Java支持<strong>非短路求值</strong>也支持<strong>短路求值</strong></p>
@@ -573,7 +573,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -595,7 +595,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -618,6 +618,12 @@
                     <a href="mailto:heyujieboy@gmail.com" target="_blank" title="E-Mail">
                       
                         <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.dccif.top" target="_blank" title="Blog">
+                      
+                        <i class="fa fa-fw fa-globe"></i>Blog</a>
                   </span>
                 
             </div>
